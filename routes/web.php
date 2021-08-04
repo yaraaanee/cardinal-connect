@@ -16,3 +16,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/osa/manage', function () {
+    return view('osa.applications');
+});
+
+Route::get('/osa/home', function () {
+    return view('osa.home');
+});
+
+Route::get('/login', function () {
+    return view('login');
+});
