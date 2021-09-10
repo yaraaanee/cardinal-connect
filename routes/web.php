@@ -17,14 +17,42 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/osa/manage', function () {
+Route::get('/osa/apps', function () {
     return view('osa.applications');
+});
+
+Route::get('/master', function () {
+    return view('layout.master');
 });
 
 Route::get('/osa/home', function () {
     return view('osa.home');
 });
 
+Route::get('/org/home', function () {
+    return view('org.home');
+});
+
+Route::get('/org/logs', function () {
+    return view('org.logs');
+});
+
+Route::get('/org/manage', function () {
+    return view('org.manage');
+});
+
+Route::get('/student/home', function () {
+    return view('student.home');
+});
+
 Route::get('/login', function () {
     return view('login');
 });
+
+Route::get('/login', function () {
+    return view('login');
+});
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

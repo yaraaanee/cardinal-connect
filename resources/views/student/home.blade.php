@@ -33,6 +33,7 @@
             Cardinal Connect
           </a>
           <ul class="mt-6">
+            <!-- Dashboard -->
             <li class="relative px-6 py-3">
               <span
                 class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
@@ -79,10 +80,10 @@
                     stroke="currentColor"
                   >
                     <path
-                      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
                     ></path>
                   </svg>
-                  <span class="ml-4">Manage</span>
+                  <span class="ml-4">Events</span>
                 </span>
                 <svg
                   class="w-4 h-4"
@@ -110,7 +111,10 @@
                 >
                 <!-- Dropdown Pages -->
                 <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                    <a class="w-full" href="/osa/apps">Applications</a>
+                    <a class="w-full" href="/osa/apps">Registration</a>
+                  </li>
+                  <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
+                    <a class="w-full" href="pages/login.html"> Student </a>
                   </li>
                 </ul>               
               </template>
@@ -120,7 +124,7 @@
             <button
               class="flex items-center justify-between w-full px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
             >
-             <!-- Create account -->
+              Create account
               <span class="ml-2" aria-hidden="true">+</span>
             </button>
           </div>
@@ -158,6 +162,7 @@
             Cardinal Connect
           </a>
           <ul class="mt-6">
+            <!-- (Mobile) Dashboard Tab -->
             <li class="relative px-6 py-3">
               <span
                 class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
@@ -165,7 +170,7 @@
               ></span>
               <a
                 class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
-                href="/osa/home"
+                href="index.html"
               >
                 <svg
                   class="w-5 h-5"
@@ -186,6 +191,7 @@
             </li>
           </ul>
           <ul>
+            <!-- (Mobile) Events Tab -->
             <li class="relative px-6 py-3">
               <button
                 class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
@@ -204,10 +210,10 @@
                     stroke="currentColor"
                   >
                     <path
-                      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                      d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"
                     ></path>
                   </svg>
-                  <span class="ml-4">Manage</span>
+                  <span class="ml-4">Pages</span>
                 </span>
                 <svg
                   class="w-4 h-4"
@@ -233,9 +239,17 @@
                   class="p-2 mt-2 space-y-2 overflow-hidden text-sm font-medium text-gray-500 rounded-md shadow-inner bg-gray-50 dark:text-gray-400 dark:bg-gray-900"
                   aria-label="submenu"
                 >
-                <!-- Dropdown Pages -->
-                  <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                    <a class="w-full" href="/osa/apps">Applications</a>
+                  <li
+                    class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                  >
+                    <a class="w-full" href="pages/login.html"></a>
+                  </li>
+                  <li
+                    class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                  >
+                    <a class="w-full" href="pages/create-account.html">
+                      Student Evaluation
+                    </a>
                   </li>
                 </ul>
               </template>
@@ -511,61 +525,34 @@
         <main class="h-full pb-16 overflow-y-auto">
           <!-- Remove everything INSIDE this div to a really blank page -->
           <div class="container px-6 mx-auto grid">
-            <h2
-              class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200"
-            >
-              Home
-              
-              <!--PIXELS-->
-                <div class="max-w-4xl mx-auto bg-white overflow-hidden shadow-md rounded-lg mb-12 grid grid-cols-2 gap-4">
-                    <img src="https://scontent.fcrk4-1.fna.fbcdn.net/v/t39.30808-6/219642382_1877375979093224_4501403283115120862_n.png?_nc_cat=111&ccb=1-3&_nc_sid=730e14&_nc_ohc=PxZ-tx54lkgAX9FzIBp&_nc_ht=scontent.fcrk4-1.fna&oh=e87a45397dcb9de1763fcf9a8b422b99&oe=61061241" 
-                    alt="" class="w-full h-64 object-cover ">
+            <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
+              Dashboard </h2>
 
-                    <div class="p-6 ">
-                        <div>
-                            <span class="text-blue-600 text-xs font-medium uppercase">SOIT STUDENT COUNCIL</span>
-                            <a href="#" class="block text-gray-800 font-semibold text-2xl mt-2 hover:text-gray-600 hover:underline">PIXELS: An Impact One Bit At A Time</a>
-                            <p class="text-sm text-gray-600 mt-2 text-justify">Catch us live on July 16, Friday, at 10:30 AM, as we recognize the officers of our local organizations with special remarks from Dean Ariel Kelly Balan and the president of the SOIT SC, Jerome Ramos!</p>
-                        </div>
-                    </div>
-                </div>
-                <br>
-
-                <!--IT Girl-->
-
-                <div class="max-w-4xl mx-auto bg-white overflow-hidden shadow-md rounded-lg mb-12 grid grid-cols-2 gap-4">
-                    <img src="https://scontent.fcrk4-1.fna.fbcdn.net/v/t1.6435-9/164878522_4122214184491596_7920384675582262737_n.png?_nc_cat=106&ccb=1-3&_nc_sid=9267fe&_nc_ohc=PS9-c30mYsEAX9hQDTV&_nc_ht=scontent.fcrk4-1.fna&oh=755259a7f41bf288f0c22df59c8d7721&oe=61252017" 
-                    alt="" class="w-full h-64 object-cover">
+                <div class="max-w-2xl mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+                    <img class="object-cover w-full h-64" src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Article">
 
                     <div class="p-6">
                         <div>
-                            <span class="text-blue-600 text-xs font-medium uppercase">Web Masters' Guild</span>
-                            <a href="#" class="block text-gray-800 font-semibold text-2xl mt-2 hover:text-gray-600 hover:underline">I.T. Girl</a>
-                            <p class="text-sm text-gray-600 mt-2 text-justify">Join Webmaster's Guild, together with our empowered women speakers from the fields of Information Technology</p>
+                            <span class="text-xs font-medium text-blue-600 uppercase dark:text-blue-400">SOIT SC</span>
+                            <a href="#" class="block mt-2 text-2xl font-semibold text-gray-800 dark:text-white hover:text-gray-600 hover:underline">Learning Online</a>
+                            <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie parturient et sem ipsum volutpat vel. Natoque sem et aliquam mauris egestas quam volutpat viverra. In pretium nec senectus erat. Et malesuada lobortis.</p>
+                        </div>
+
+                        <div class="mt-4">
+                            <div class="flex items-center">
+                                <div class="flex items-center">
+                                    <img class="object-cover h-10 rounded-full" src="https://images.unsplash.com/photo-1586287011575-a23134f797f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=48&q=60" alt="Avatar">
+                                    <a href="#" class="mx-2 font-semibold text-gray-700 dark:text-gray-200">Jone Doe</a>
+                                </div>
+                                <span class="mx-1 text-xs text-gray-600 dark:text-gray-300">21 SEP 2015</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <br>
-
-                <!--LEADERSHIP SUMMIT-->
-                <div class="max-w-4xl mx-auto bg-white overflow-hidden shadow-md rounded-lg mb-12 grid grid-cols-2 gap-4">
-                  <img src="https://scontent.fcrk4-1.fna.fbcdn.net/v/t1.6435-9/191653768_1837211159776373_1406884219945193703_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=e3f864&_nc_ohc=yD8Ee8U3tG0AX9flsAV&_nc_ht=scontent.fcrk4-1.fna&oh=c3a85be23ec133b4368bc571926caa83&oe=612581DD" 
-                    alt="" class="w-full h-64 object-cover">
-
-                <div class="p-6">
-                    <div>
-                        <span class="text-blue-600 text-xs font-medium uppercase">SOIT STUDENT COUNCIL</span> <br>
-                        <a href="#" class="block text-gray-800 font-semibold text-2xl mt-2 hover:text-gray-600 hover:underline">Leadership Summit 2021</a>
-                        <p class="text-sm text-gray-600 mt-2 text-justify">Learn from the most competent leaders as they share their knowledge and inspire us to serve with a purpose. Make a breakthrough and reimagine the way you perceive leadership.</p>
-                    </div>
-                </div>
-                <div class="max-w-2xl mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
-            </div>
+              </div>
             </h2>
           </div>
         </main>
-        
-
       </div>
     </div>
   </body>

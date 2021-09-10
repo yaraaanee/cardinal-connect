@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | Cardinal Connect</title>
+    <title>Home | Cardinal Connect <!--@yield('title')--></title>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
@@ -26,10 +26,8 @@
         class="z-20 hidden w-64 overflow-y-auto bg-white dark:bg-gray-800 md:block flex-shrink-0"
       >
         <div class="py-4 text-gray-500 dark:text-gray-400">
-          <a
-            class="ml-6 text-lg font-bold text-gray-800 dark:text-gray-200"
-            href="/osa/home"
-          >
+          <a class="ml-6 text-lg font-bold text-gray-800 dark:text-gray-200"
+            href="/org/home">
             Cardinal Connect
           </a>
           <ul class="mt-6">
@@ -38,10 +36,8 @@
                 class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
                 aria-hidden="true"
               ></span>
-              <a
-                class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
-                href="/osa/home"
-              >
+              <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
+                href="/org/home">
                 <svg
                   class="w-5 h-5"
                   aria-hidden="true"
@@ -59,8 +55,30 @@
                 <span class="ml-4">Dashboard</span>
               </a>
             </li>
+            
+            <!-- Manage-->
+            <li class="relative px-6 py-3">
+              <a
+                class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                href="/org/manage"
+              >
+                <svg
+                  class="w-5 h-5"
+                  aria-hidden="true"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                </svg>
+                <span class="ml-4">Manage</span>
+              </a>
+            </li>
         
-            <!-- Manage -->
+            <!-- Documents -->
             <li class="relative px-6 py-3">
               <button
                 class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
@@ -82,7 +100,7 @@
                       d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
                     ></path>
                   </svg>
-                  <span class="ml-4">Manage</span>
+                  <span class="ml-4">Documents</span>
                 </span>
                 <svg
                   class="w-4 h-4"
@@ -108,11 +126,16 @@
                   class="p-2 mt-2 space-y-2 overflow-hidden text-sm font-medium text-gray-500 rounded-md shadow-inner bg-gray-50 dark:text-gray-400 dark:bg-gray-900"
                   aria-label="submenu"
                 >
-                <!-- Dropdown Pages -->
-                <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                    <a class="w-full" href="/osa/apps">Applications</a>
+                  <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
+                    <a class="w-full" href="/org/logs"> Logs </a>
                   </li>
-                </ul>               
+                  <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
+                    <a class="w-full" href="#"> Applications </a>
+                  </li>
+                  <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
+                    <a class="w-full" href="#"> Post Activity Reports </a>
+                  </li>
+                </ul>
               </template>
             </li>
           </ul>
@@ -120,7 +143,7 @@
             <button
               class="flex items-center justify-between w-full px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
             >
-             <!-- Create account -->
+              <!-- Create account -->
               <span class="ml-2" aria-hidden="true">+</span>
             </button>
           </div>
@@ -165,7 +188,7 @@
               ></span>
               <a
                 class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
-                href="/osa/home"
+                href="index.html"
               >
                 <svg
                   class="w-5 h-5"
@@ -187,6 +210,28 @@
           </ul>
           <ul>
             <li class="relative px-6 py-3">
+              <a
+                class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                href="forms.html"
+              >
+                <svg
+                  class="w-5 h-5"
+                  aria-hidden="true"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
+                  ></path>
+                </svg>
+                <span class="ml-4">Manage</span>
+              </a>
+            </li>
+            <li class="relative px-6 py-3">
               <button
                 class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                 @click="togglePagesMenu"
@@ -207,7 +252,7 @@
                       d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
                     ></path>
                   </svg>
-                  <span class="ml-4">Manage</span>
+                  <span class="ml-4">Documents</span>
                 </span>
                 <svg
                   class="w-4 h-4"
@@ -233,9 +278,22 @@
                   class="p-2 mt-2 space-y-2 overflow-hidden text-sm font-medium text-gray-500 rounded-md shadow-inner bg-gray-50 dark:text-gray-400 dark:bg-gray-900"
                   aria-label="submenu"
                 >
-                <!-- Dropdown Pages -->
-                  <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                    <a class="w-full" href="/osa/apps">Applications</a>
+                  <li
+                    class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                  >
+                    <a class="w-full" href="org/logs"> Logs </a>
+                  </li>
+                  <li
+                    class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                  >
+                    <a class="w-full" href="pages/forgot-password.html">
+                      Application
+                    </a>
+                  </li>
+                  <li
+                    class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                  >
+                    <a class="w-full" href="pages/404.html">Post Activity Reports</a>
                   </li>
                 </ul>
               </template>
@@ -245,7 +303,7 @@
             <button
               class="flex items-center justify-between px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
             >
-              Create account
+              <!-- Create account -->
               <span class="ml-2" aria-hidden="true">+</span>
             </button>
           </div>
@@ -508,14 +566,37 @@
             </ul>
           </div>
         </header>
+
         <main class="h-full pb-16 overflow-y-auto">
           <!-- Remove everything INSIDE this div to a really blank page -->
+          
           <div class="container px-6 mx-auto grid">
-            <h2
-              class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200"
-            >
+            <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
               Home
-              
+
+            <div class="max-w-2xl mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+                <img class="object-cover w-full h-64" src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.6435-9/237084819_4443343015686837_1045095332803328438_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=1VslA4js9d8AX8eNCXb&_nc_ht=scontent.fmnl17-3.fna&oh=8c4928d7767dca216bed89fdebaff0f5&oe=6155D1A7" alt="Article">
+
+                <div class="p-6">
+                    <div>
+                        <span class="text-xs font-medium text-blue-600 uppercase dark:text-blue-400">Event</span>
+                        <a href="#" class="block mt-2 text-2xl font-semibold text-gray-800 dark:text-white hover:text-gray-600 hover:underline">CREATE: Multimedia Tooldbox</a>
+                        <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie parturient et sem ipsum volutpat vel. Natoque sem et aliquam mauris egestas quam volutpat viverra. In pretium nec senectus erat. Et malesuada lobortis.</p>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <div class="flex items-center">
+                            <div class="flex items-center">
+                                <img class="object-cover h-10 rounded-full" src="https://images.unsplash.com/photo-1586287011575-a23134f797f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=48&q=60" alt="Avatar">
+                                <a href="#" class="mx-2 font-semibold text-gray-700 dark:text-gray-200">Illuminata Mapua</a>
+                            </div>
+                            <span class="mx-1 text-xs text-gray-600 dark:text-gray-300">03 SEP 2021</span>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+              <br>
+
               <!--PIXELS-->
                 <div class="max-w-4xl mx-auto bg-white overflow-hidden shadow-md rounded-lg mb-12 grid grid-cols-2 gap-4">
                     <img src="https://scontent.fcrk4-1.fna.fbcdn.net/v/t39.30808-6/219642382_1877375979093224_4501403283115120862_n.png?_nc_cat=111&ccb=1-3&_nc_sid=730e14&_nc_ohc=PxZ-tx54lkgAX9FzIBp&_nc_ht=scontent.fcrk4-1.fna&oh=e87a45397dcb9de1763fcf9a8b422b99&oe=61061241" 
@@ -564,7 +645,6 @@
             </h2>
           </div>
         </main>
-        
 
       </div>
     </div>

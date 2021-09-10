@@ -28,19 +28,15 @@
         <div class="py-4 text-gray-500 dark:text-gray-400">
           <a
             class="ml-6 text-lg font-bold text-gray-800 dark:text-gray-200"
-            href="/osa/home"
+            href="/org/home"
           >
             Cardinal Connect
           </a>
           <ul class="mt-6">
             <li class="relative px-6 py-3">
-              <span
-                class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
-                aria-hidden="true"
-              ></span>
               <a
-                class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
-                href="/osa/home"
+                class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                href="/org/home"
               >
                 <svg
                   class="w-5 h-5"
@@ -59,8 +55,31 @@
                 <span class="ml-4">Dashboard</span>
               </a>
             </li>
-        
-            <!-- Manage -->
+            
+            <!-- Manage-->
+            <li class="relative px-6 py-3">
+              <!-- ACTIVE TAB INDICATOR -->
+              <span
+                class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
+                aria-hidden="true"></span>
+              <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100" href="/org/manage">
+
+                <svg
+                  class="w-5 h-5"
+                  aria-hidden="true"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                </svg>
+                <span class="ml-4">Manage</span>
+              </a>
+            </li>
+          <!-- Documents -->
             <li class="relative px-6 py-3">
               <button
                 class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
@@ -82,7 +101,7 @@
                       d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
                     ></path>
                   </svg>
-                  <span class="ml-4">Manage</span>
+                  <span class="ml-4">Documents</span>
                 </span>
                 <svg
                   class="w-4 h-4"
@@ -108,11 +127,16 @@
                   class="p-2 mt-2 space-y-2 overflow-hidden text-sm font-medium text-gray-500 rounded-md shadow-inner bg-gray-50 dark:text-gray-400 dark:bg-gray-900"
                   aria-label="submenu"
                 >
-                <!-- Dropdown Pages -->
-                <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                    <a class="w-full" href="/osa/apps">Applications</a>
+                  <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
+                    <a class="w-full" href="/org/logs"> Logs </a>
                   </li>
-                </ul>               
+                  <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
+                    <a class="w-full" href="/org/applications"> Applications </a>
+                  </li>
+                  <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
+                    <a class="w-full" href="/org/par"> Post Activity Reports </a>
+                  </li>
+                </ul>
               </template>
             </li>
           </ul>
@@ -120,7 +144,7 @@
             <button
               class="flex items-center justify-between w-full px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
             >
-             <!-- Create account -->
+              Create account
               <span class="ml-2" aria-hidden="true">+</span>
             </button>
           </div>
@@ -165,7 +189,7 @@
               ></span>
               <a
                 class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
-                href="/osa/home"
+                href="index.html"
               >
                 <svg
                   class="w-5 h-5"
@@ -187,6 +211,28 @@
           </ul>
           <ul>
             <li class="relative px-6 py-3">
+              <a
+                class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                href="forms.html"
+              >
+                <svg
+                  class="w-5 h-5"
+                  aria-hidden="true"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
+                  ></path>
+                </svg>
+                <span class="ml-4">Manage</span>
+              </a>
+            </li>
+            <li class="relative px-6 py-3">
               <button
                 class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                 @click="togglePagesMenu"
@@ -207,7 +253,7 @@
                       d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
                     ></path>
                   </svg>
-                  <span class="ml-4">Manage</span>
+                  <span class="ml-4">Documents</span>
                 </span>
                 <svg
                   class="w-4 h-4"
@@ -233,9 +279,17 @@
                   class="p-2 mt-2 space-y-2 overflow-hidden text-sm font-medium text-gray-500 rounded-md shadow-inner bg-gray-50 dark:text-gray-400 dark:bg-gray-900"
                   aria-label="submenu"
                 >
-                <!-- Dropdown Pages -->
+                  <li
+                    class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                  >
+                    <a class="w-full" href="/org/logs"> Logs </a>
+                  </li>
+                  <li
+                    class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
+                    <a class="w-full" href="pages/forgot-password.html"> Application </a>
+                  </li>
                   <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                    <a class="w-full" href="/osa/apps">Applications</a>
+                    <a class="w-full" href="pages/404.html">Post Activity Reports</a>
                   </li>
                 </ul>
               </template>
@@ -245,7 +299,7 @@
             <button
               class="flex items-center justify-between px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
             >
-              Create account
+              <!-- Create account -->
               <span class="ml-2" aria-hidden="true">+</span>
             </button>
           </div>
@@ -508,64 +562,339 @@
             </ul>
           </div>
         </header>
+
+        <!-- BODY -->
         <main class="h-full pb-16 overflow-y-auto">
-          <!-- Remove everything INSIDE this div to a really blank page -->
           <div class="container px-6 mx-auto grid">
             <h2
               class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200"
             >
-              Home
-              
-              <!--PIXELS-->
-                <div class="max-w-4xl mx-auto bg-white overflow-hidden shadow-md rounded-lg mb-12 grid grid-cols-2 gap-4">
-                    <img src="https://scontent.fcrk4-1.fna.fbcdn.net/v/t39.30808-6/219642382_1877375979093224_4501403283115120862_n.png?_nc_cat=111&ccb=1-3&_nc_sid=730e14&_nc_ohc=PxZ-tx54lkgAX9FzIBp&_nc_ht=scontent.fcrk4-1.fna&oh=e87a45397dcb9de1763fcf9a8b422b99&oe=61061241" 
-                    alt="" class="w-full h-64 object-cover ">
-
-                    <div class="p-6 ">
-                        <div>
-                            <span class="text-blue-600 text-xs font-medium uppercase">SOIT STUDENT COUNCIL</span>
-                            <a href="#" class="block text-gray-800 font-semibold text-2xl mt-2 hover:text-gray-600 hover:underline">PIXELS: An Impact One Bit At A Time</a>
-                            <p class="text-sm text-gray-600 mt-2 text-justify">Catch us live on July 16, Friday, at 10:30 AM, as we recognize the officers of our local organizations with special remarks from Dean Ariel Kelly Balan and the president of the SOIT SC, Jerome Ramos!</p>
-                        </div>
-                    </div>
-                </div>
-                <br>
-
-                <!--IT Girl-->
-
-                <div class="max-w-4xl mx-auto bg-white overflow-hidden shadow-md rounded-lg mb-12 grid grid-cols-2 gap-4">
-                    <img src="https://scontent.fcrk4-1.fna.fbcdn.net/v/t1.6435-9/164878522_4122214184491596_7920384675582262737_n.png?_nc_cat=106&ccb=1-3&_nc_sid=9267fe&_nc_ohc=PS9-c30mYsEAX9hQDTV&_nc_ht=scontent.fcrk4-1.fna&oh=755259a7f41bf288f0c22df59c8d7721&oe=61252017" 
-                    alt="" class="w-full h-64 object-cover">
-
-                    <div class="p-6">
-                        <div>
-                            <span class="text-blue-600 text-xs font-medium uppercase">Web Masters' Guild</span>
-                            <a href="#" class="block text-gray-800 font-semibold text-2xl mt-2 hover:text-gray-600 hover:underline">I.T. Girl</a>
-                            <p class="text-sm text-gray-600 mt-2 text-justify">Join Webmaster's Guild, together with our empowered women speakers from the fields of Information Technology</p>
-                        </div>
-                    </div>
-                </div>
-                <br>
-
-                <!--LEADERSHIP SUMMIT-->
-                <div class="max-w-4xl mx-auto bg-white overflow-hidden shadow-md rounded-lg mb-12 grid grid-cols-2 gap-4">
-                  <img src="https://scontent.fcrk4-1.fna.fbcdn.net/v/t1.6435-9/191653768_1837211159776373_1406884219945193703_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=e3f864&_nc_ohc=yD8Ee8U3tG0AX9flsAV&_nc_ht=scontent.fcrk4-1.fna&oh=c3a85be23ec133b4368bc571926caa83&oe=612581DD" 
-                    alt="" class="w-full h-64 object-cover">
-
-                <div class="p-6">
-                    <div>
-                        <span class="text-blue-600 text-xs font-medium uppercase">SOIT STUDENT COUNCIL</span> <br>
-                        <a href="#" class="block text-gray-800 font-semibold text-2xl mt-2 hover:text-gray-600 hover:underline">Leadership Summit 2021</a>
-                        <p class="text-sm text-gray-600 mt-2 text-justify">Learn from the most competent leaders as they share their knowledge and inspire us to serve with a purpose. Make a breakthrough and reimagine the way you perceive leadership.</p>
-                    </div>
-                </div>
-                <div class="max-w-2xl mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
-            </div>
+              Forms
             </h2>
-          </div>
-        </main>
-        
+            <!-- General elements -->
+            <h4
+              class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300"
+            >
+              Elements
+            </h4>
+            <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
+              <label class="block text-sm">
+                <span class="text-gray-700 dark:text-gray-400">Name of Organization</span>
+                <input
+                  class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                  placeholder="Org Name (Initials)"
+                />
+              </label>
 
+              <label class="block mt-4 text-sm">
+                <span class="text-gray-700 dark:text-gray-400">Nature of the Activity</span>
+                <textarea
+                  class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                  rows="2"
+                  placeholder="Enter some long form content."
+                ></textarea>
+              </label>
+
+              <label class="block mt-4 text-sm">
+                <span class="text-gray-700 dark:text-gray-400">Objectives of the Activity</span>
+                <textarea
+                  class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                  rows="2"
+                  placeholder="Enter some long form content."
+                ></textarea>
+              </label>
+              
+              <label class="block mt-4 text-sm">
+                <span class="text-gray-700 dark:text-gray-400"> Type of Event </span>
+                <select class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
+                  <option>Online</option>
+                  <option>Onsite</option>
+                </select>
+              </label>
+
+              <label class="block text-sm">
+                <span class="text-gray-700 dark:text-gray-400">Medium of Event</span>
+                <input
+                  class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                  placeholder="Org Name (Initials)"/>
+              </label>
+
+          
+              <div class="flex mt-6 text-sm">
+                <label class="flex items-center dark:text-gray-400">
+                  <input
+                    type="checkbox"
+                    class="text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                  />
+                  <span class="ml-3">
+                  We, the undersigned students/faculty members/organizer/adviser of the Mapua Institute of Technology, shall hold 
+                  ourselves jointly and severally responsible for any injury to persons arising from the activity that we applied for, and we 
+                  shall supervise the activity and comply with school policies e.g. no alcoholic beverages and other unlawful activities during the activity.
+                   <!-- <span class="underline">privacy policy</span> -->
+                  </span>
+                </label>
+              </div>
+              <br>
+              <div>
+                <button class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                  Submit
+                </button>
+              </div>
+            </div>
+
+            <!-- Validation inputs -->
+            <h4
+              class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300"
+            >
+              Validation
+            </h4>
+            <div
+              class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800"
+            >
+              <!-- Invalid input -->
+              <label class="block text-sm">
+                <span class="text-gray-700 dark:text-gray-400">
+                  Invalid input
+                </span>
+                <input
+                  class="block w-full mt-1 text-sm border-red-600 dark:text-gray-300 dark:bg-gray-700 focus:border-red-400 focus:outline-none focus:shadow-outline-red form-input"
+                  placeholder="Jane Doe"
+                />
+                <span class="text-xs text-red-600 dark:text-red-400">
+                  Your password is too short.
+                </span>
+              </label>
+
+              <!-- Valid input -->
+              <label class="block mt-4 text-sm">
+                <span class="text-gray-700 dark:text-gray-400">
+                  Valid input
+                </span>
+                <input
+                  class="block w-full mt-1 text-sm border-green-600 dark:text-gray-300 dark:bg-gray-700 focus:border-green-400 focus:outline-none focus:shadow-outline-green form-input"
+                  placeholder="Jane Doe"
+                />
+                <span class="text-xs text-green-600 dark:text-green-400">
+                  Your password is strong.
+                </span>
+              </label>
+
+              <!-- Helper text -->
+              <label class="block mt-4 text-sm">
+                <span class="text-gray-700 dark:text-gray-400">
+                  Helper text
+                </span>
+                <input
+                  class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
+                  placeholder="Jane Doe"
+                />
+                <span class="text-xs text-gray-600 dark:text-gray-400">
+                  Your password must be at least 6 characters long.
+                </span>
+              </label>
+            </div>
+
+            <!-- Inputs with icons -->
+            <h4
+              class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300"
+            >
+              Icons
+            </h4>
+            <div
+              class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800"
+            >
+              <label class="block text-sm">
+                <span class="text-gray-700 dark:text-gray-400">Icon left</span>
+                <!-- focus-within sets the color for the icon when input is focused -->
+                <div
+                  class="relative text-gray-500 focus-within:text-purple-600 dark:focus-within:text-purple-400"
+                >
+                  <input
+                    class="block w-full pl-10 mt-1 text-sm text-black dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
+                    placeholder="Jane Doe"
+                  />
+                  <div
+                    class="absolute inset-y-0 flex items-center ml-3 pointer-events-none"
+                  >
+                    <svg
+                      class="w-5 h-5"
+                      aria-hidden="true"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </label>
+
+              <label class="block mt-4 text-sm">
+                <span class="text-gray-700 dark:text-gray-400">Icon right</span>
+                <!-- focus-within sets the color for the icon when input is focused -->
+                <div
+                  class="relative text-gray-500 focus-within:text-purple-600 dark:focus-within:text-purple-400"
+                >
+                  <input
+                    class="block w-full pr-10 mt-1 text-sm text-black dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
+                    placeholder="Jane Doe"
+                  />
+                  <div
+                    class="absolute inset-y-0 right-0 flex items-center mr-3 pointer-events-none"
+                  >
+                    <svg
+                      class="w-5 h-5"
+                      aria-hidden="true"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </label>
+            </div>
+
+            <!-- Inputs with buttons -->
+            <h4
+              class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300"
+            >
+              Buttons
+            </h4>
+            <div
+              class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800"
+            >
+              <label class="block text-sm">
+                <span class="text-gray-700 dark:text-gray-400">
+                  Button left
+                </span>
+                <div class="relative">
+                  <input
+                    class="block w-full pl-20 mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
+                    placeholder="Jane Doe"
+                  />
+                  <button
+                    class="absolute inset-y-0 px-4 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-l-md active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                  >
+                    Click
+                  </button>
+                </div>
+              </label>
+
+              <label class="block mt-4 text-sm">
+                <span class="text-gray-700 dark:text-gray-400">
+                  Button right
+                </span>
+                <div
+                  class="relative text-gray-500 focus-within:text-purple-600"
+                >
+                  <input
+                    class="block w-full pr-20 mt-1 text-sm text-black dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
+                    placeholder="Jane Doe"
+                  />
+                  <button
+                    class="absolute inset-y-0 right-0 px-4 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-r-md active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
+                  >
+                    Click
+                  </button>
+                </div>
+              </label>
+            </div>
+          </div>
+          
+                      <div class="container px-6 mx-auto grid">
+                        <!-- General elements -->
+                        <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
+                      <ul class="block w-11/12 my-4 mx-auto" x-data="{selected:null}">
+                        <li class="flex align-center flex-col">
+                            <h4 @click="selected !== 0 ? selected = 0 : selected = null"
+                                class="cursor-pointer px-5 py-3 text-black text-left inline-block hover:opacity-75 hover:shadow hover:-mb-3 rounded-t">Extra Curricular Form</h4>
+                            <p x-show="selected == 0" class="border py-4 px-2">
+                              <!-- ExtraCurricular Form -->
+                            <label class="block text-sm"> 
+                                <span class="text-gray-700 dark:text-gray-400">Name of Organization</span>
+                                <input class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                                  placeholder="Org Name (Initials)"/>
+                              </label>
+
+                              <label class="block mt-4 text-sm">
+                                <span class="text-gray-700 dark:text-gray-400">Nature of the Activity</span>
+                                <textarea
+                                  class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                                  rows="2"
+                                  placeholder="Enter some long form content."
+                                ></textarea>
+                              </label>
+
+                              <label class="block mt-4 text-sm">
+                                <span class="text-gray-700 dark:text-gray-400">Objectives of the Activity</span>
+                                <textarea
+                                  class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                                  rows="2"
+                                  placeholder="Enter some long form content."
+                                ></textarea>
+                              </label>
+
+                              <label class="block mt-4 text-sm"> 
+                                <span class="text-gray-700 dark:text-gray-400">Name of Organization</span>
+                                <input class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                                  placeholder="Org Name (Initials)"/>
+                              </label>
+
+                              <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
+                                <label class="block text-sm">
+                                  <span class="text-gray-700 dark:text-gray-400">
+                                    Button left
+                                  </span>
+                                  <div class="relative">
+                                    <input
+                                      class="block w-full pl-20 mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
+                                      placeholder="Jane Doe"
+                                    />
+                                    <button
+                                      class="absolute inset-y-0 px-4 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-l-md active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                                    >
+                                      Click
+                                    </button>
+                                  </div>
+                                </label>
+                            </p>
+                        </li>
+                        
+                        <li class="flex align-center flex-col">
+                            <h4 @click="selected !== 1 ? selected = 1 : selected = null"
+                                class="cursor-pointer px-5 py-3  text-black text-left inline-block hover:opacity-75 hover:shadow hover:-mb-3">Accordion item 2</h4>
+                            <p x-show="selected == 1" class="border py-4 px-2">
+                                There's no external CSS or JS
+                            </p>
+                        </li>
+                        <li class="flex align-center flex-col">
+                            <h4 @click="selected !== 2 ? selected = 2 : selected = null"
+                                :class="{'cursor-pointer px-5 py-3 text-black text-left inline-block hover:opacity-75 hover:shadow hover:-mb-3': true, 'rounded-b': selected != 2}">Accordion item 3</h4>
+                            <p x-show="selected == 2" :class="{'border py-4 px-2': true, 'rounded-b': selected == 2}">
+                                Pretty cool huh?
+                            </p>
+                        </li>
+                    </ul>
+                </body>
+            </div>
+
+
+
+
+          </main>
+        
       </div>
     </div>
   </body>

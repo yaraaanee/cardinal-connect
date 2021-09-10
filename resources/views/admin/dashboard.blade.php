@@ -1,7 +1,7 @@
-@extends('')
+@extends('layout.applications')
 @endsection
 
-@exteends('layouts.home')
+@extends('layout.home')
 @endsection
 
 @section('title')
@@ -11,3 +11,4 @@ Home | Cardinal Connect
 @section('content')
 
 @endsection
+
