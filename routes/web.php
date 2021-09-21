@@ -53,8 +53,8 @@ Route::get('/student/evals', function () {
     return view('student.evals');
 });
 
-Route::get('/login', function () {
-    return view('login');
+Route::get('/cardinalconnect/login', function () {
+    return view('layouts.login');
 });
 
 Route::get('/login', function () {
