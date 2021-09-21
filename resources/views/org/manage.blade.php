@@ -133,9 +133,6 @@
                   <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
                     <a class="w-full" href="/org/applications"> Applications </a>
                   </li>
-                  <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                    <a class="w-full" href="/org/par"> Post Activity Reports </a>
-                  </li>
                 </ul>
               </template>
             </li>
@@ -287,9 +284,6 @@
                   <li
                     class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
                     <a class="w-full" href="pages/forgot-password.html"> Application </a>
-                  </li>
-                  <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                    <a class="w-full" href="pages/404.html">Post Activity Reports</a>
                   </li>
                 </ul>
               </template>
@@ -655,59 +649,6 @@
                   Submit
                 </button>
               </div>
-            </div>
-
-
-            <!-- sample Form -->
-            <h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">
-              Sample Form
-            </h4>
-            <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
-                <label class="block text-sm"> 
-                    <span class="text-gray-700 dark:text-gray-400">Name of Organization</span> 
-                    <input class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                      placeholder="Org Name (Initials)"/>
-                  </label>
-
-                  <label class="block mt-4 text-sm">
-                    <span class="text-gray-700 dark:text-gray-400">Nature of the Activity</span>
-                    <textarea
-                      class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
-                      rows="2"
-                      placeholder="Enter some long form content."
-                    ></textarea>
-                  </label>
-
-                  <label class="block mt-4 text-sm">
-                    <span class="text-gray-700 dark:text-gray-400">Objectives of the Activity</span>
-                    <textarea
-                      class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
-                      rows="2"
-                      placeholder="Enter some long form content."
-                    ></textarea>
-                  </label>
-
-              <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Medium of Event</span>
-                <input class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                  placeholder="Org Name (Initials)"/> <br>
-                  <div class="relative">
-                        <input class="block w-full pl-20 mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
-                          placeholder="Title of File"/>
-                        <button class="absolute inset-y-0 px-4 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-l-md active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray" >
-                          Click </button>
-                  </div> <br>
-
-                    <input type="checkbox" class="text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"/>
-                      <span class="ml-3">
-                      We, the undersigned students/faculty members/organizer/adviser of the Mapua Institute of Technology, shall hold 
-                      ourselves jointly and severally responsible for any injury to persons arising from the activity that we applied for, and we 
-                      shall supervise the activity and comply with school policies e.g. no alcoholic beverages and other unlawful activities during the activity.
-                      <br>
-                      </span> <br> 
-                      <button class="block w-full px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
-                      Submit </button>
-                </label>
             </div>
       
             <!--<div class="container px-6 mx-auto grid"> -->
