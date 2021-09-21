@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"/>
     <link rel="stylesheet" href="../assets/css/tailwind.output.css" />
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
     <script
       src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
       defer
@@ -537,7 +538,7 @@
                 />
               </label>
 
-              <label class="block text-sm">
+              <label class="block mt-4 text-sm">
                 <span class="text-gray-700 dark:text-gray-400">Event Name/Activity Title</span>
                 <input
                   class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
@@ -564,13 +565,11 @@
                 </select>
               </label>
 
-              <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400 col">
+              <label class="form-row mt-4 text-sm">
+                <span class="col-md-6 my-auto text-gray-700 dark:text-gray-400">
                 The event was meaningful and relevant to my student life.
                 </span>
-                <select
-                  class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
-                >
+                <select class="col-md-6 w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
                   <option>1</option>
                   <option>2</option>
                   <option>3</option>
