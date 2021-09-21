@@ -714,12 +714,25 @@
             <!-- General elements -->
             <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
             <ul class="block w-11/12 my-4 mx-auto" x-data="{selected:null}">
-              <li class="flex align-center flex-col">
+              <li class="accordion flex align-center flex-col" aria-expanded="true">
                   <h4 @click="selected !== 0 ? selected = 0 : selected = null"
-                      class="cursor-pointer px-5 py-3 text-black text-left inline-block hover:opacity-75 hover:shadow hover:-mb-3 rounded-t">Extra Curricular Activity Form </h4> 
-                  <label x-show="selected == 0" class="border py-4 px-2">
+                      class="accordion-header inline-flex items-center justify-between cursor-pointer px-5 py-3 text-black text-left inline-block hover:opacity-75 hover:shadow hover:-mb-3 rounded-t">Extra Curricular Activity Form 
+                      <svg
+                  class="w-4 h-4"
+                  aria-hidden="true"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                    </h4>
+                  <label x-show="selected == 0">
                     <!-- ExtraCurricular Form -->
-                  <div class="container px-6 mx-auto grid">
+                  <div class="container px-6 mx-auto mt-4 grid">
                   <label class="block text-sm"> 
                       <span class="text-gray-700 dark:text-gray-400">Name of Organization</span> 
                       <input class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
@@ -790,19 +803,45 @@
                   </label>
                 </li>
                         
-                <li class="flex align-center flex-col">
+                <li class="accordion flex align-center flex-col">
                     <h4 @click="selected !== 1 ? selected = 1 : selected = null"
-                        class="cursor-pointer px-5 py-3  text-black text-left inline-block hover:opacity-75 hover:shadow hover:-mb-3">Co Curricular Activity Form</h4>
-                    <label x-show="selected == 1" class="border py-4 px-2">
+                        class="accordion-header inline-flex items-center justify-between cursor-pointer px-5 py-3  text-black text-left inline-block hover:opacity-75 hover:shadow hover:-mb-3">Co Curricular Activity Form
+                        <svg
+                  class="w-4 h-4"
+                  aria-hidden="true"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                      </h4>
+                    <label x-show="selected == 1">
                         
                 </label>
                 </li>
 
-                <li class="flex align-center flex-col">
+                <li class="accordion flex align-center flex-col">
                     <h4 @click="selected !== 2 ? selected = 2 : selected = null"
-                        :class="{'cursor-pointer px-5 py-3 text-black text-left inline-block hover:opacity-75 hover:shadow hover:-mb-3': true, 'rounded-b': selected != 2}">Post Activity Report</h4>
-                    <label x-show="selected == 2" :class="{'border py-4 px-2': true, 'rounded-b': selected == 2}">
-                    <div class="container px-6">
+                        :class="{'accordion-header inline-flex items-center justify-between cursor-pointer px-5 py-3 text-black text-left inline-block hover:opacity-75 hover:shadow hover:-mb-3': true, 'rounded-b': selected != 2}">Post Activity Report
+                        <svg
+                  class="w-4 h-4"
+                  aria-hidden="true"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                      </h4>
+                    <label x-show="selected == 2">
+                    <div class="container mt-4 px-6">
                       <label class="block mt-1 text-sm text-gray-700 dark:text-gray-400"> Upload the Post Activity Report file </label> <br>
                     <div class="relative">
                                 <input class="block w-full pl-20 mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
