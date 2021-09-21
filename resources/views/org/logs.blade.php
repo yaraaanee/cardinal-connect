@@ -34,12 +34,8 @@
           </a>
           <ul class="mt-6">
             <li class="relative px-6 py-3">
-              <span
-                class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
-                aria-hidden="true"
-              ></span>
               <a
-                class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
+              class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                 href="/org/home"
               >
                 <svg
@@ -84,8 +80,11 @@
         
             <!-- Documents -->
             <li class="relative px-6 py-3">
+            <span
+                class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
+                aria-hidden="true"></span>
               <button
-                class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                class="inline-flex items-center justify-between w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
                 @click="togglePagesMenu"
                 aria-haspopup="true"
               >
@@ -186,10 +185,6 @@
           </a>
           <ul class="mt-6">
             <li class="relative px-6 py-3">
-              <span
-                class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
-                aria-hidden="true"
-              ></span>
               <a
                 class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
                 href="index.html"
@@ -236,6 +231,9 @@
               </a>
             </li>
             <li class="relative px-6 py-3">
+            <span
+                class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
+                aria-hidden="true"></span>
               <button
                 class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                 @click="togglePagesMenu"
@@ -578,13 +576,6 @@
             >
               Tables
             </h2>
-
-            <!-- With avatar -->
-            <h4
-              class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300"
-            >
-              Table with avatars
-            </h4>
             <div class="w-full mb-8 overflow-hidden rounded-lg shadow-xs">
               <div class="w-full overflow-x-auto">
                 <table class="w-full whitespace-no-wrap">
@@ -592,10 +583,12 @@
                     <tr
                       class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800"
                     >
-                      <th class="px-4 py-3">Client</th>
-                      <th class="px-4 py-3">Amount</th>
+                      <th class="px-4 py-3">Organization</th>
+                      <th class="px-4 py-3">Type</th>
                       <th class="px-4 py-3">Status</th>
+                      <th class="px-4 py-3">Notes</th>
                       <th class="px-4 py-3">Date</th>
+                      
                     </tr>
                   </thead>
                   <tbody
@@ -610,7 +603,7 @@
                           >
                             <img
                               class="object-cover w-full h-full rounded-full"
-                              src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjE3Nzg0fQ"
+                              src="https://scontent.fmnl30-1.fna.fbcdn.net/v/t1.6435-9/127242674_3714726005215212_3243996682380195767_n.png?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeEpbXnE22gYCHgCYgOeWUVCVETKlEzlC79URMqUTOULv-n6qyOqqKSWxxh85fskWrpW6BQRlVBdvV5-ip5pkA-C&_nc_ohc=M1cIMUFoVbsAX_QVZJe&_nc_ht=scontent.fmnl30-1.fna&oh=36413c2b3465f1145738a0e6ef175355&oe=61682636"
                               alt=""
                               loading="lazy"
                             />
@@ -620,15 +613,15 @@
                             ></div>
                           </div>
                           <div>
-                            <p class="font-semibold">Hans Burger</p>
+                            <p class="font-semibold">Illuminata Mapua</p>
                             <p class="text-xs text-gray-600 dark:text-gray-400">
-                              10x Developer
+                              Open Org
                             </p>
                           </div>
                         </div>
                       </td>
                       <td class="px-4 py-3 text-sm">
-                        $ 863.45
+                        Post Activity Report
                       </td>
                       <td class="px-4 py-3 text-xs">
                         <span
@@ -636,6 +629,9 @@
                         >
                           Approved
                         </span>
+                        <td class="px-4 py-3 text-sm">
+                        Acknowledged
+                      </td>
                       </td>
                       <td class="px-4 py-3 text-sm">
                         6/10/2020
@@ -645,13 +641,12 @@
                     <tr class="text-gray-700 dark:text-gray-400">
                       <td class="px-4 py-3">
                         <div class="flex items-center text-sm">
-                          <!-- Avatar with inset shadow -->
                           <div
                             class="relative hidden w-8 h-8 mr-3 rounded-full md:block"
                           >
                             <img
                               class="object-cover w-full h-full rounded-full"
-                              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&facepad=3&fit=facearea&s=707b9c33066bf8808c934c8ab394dff6"
+                              src="https://scontent.fmnl30-1.fna.fbcdn.net/v/t1.6435-9/127242674_3714726005215212_3243996682380195767_n.png?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeEpbXnE22gYCHgCYgOeWUVCVETKlEzlC79URMqUTOULv-n6qyOqqKSWxxh85fskWrpW6BQRlVBdvV5-ip5pkA-C&_nc_ohc=M1cIMUFoVbsAX_QVZJe&_nc_ht=scontent.fmnl30-1.fna&oh=36413c2b3465f1145738a0e6ef175355&oe=61682636"
                               alt=""
                               loading="lazy"
                             />
@@ -661,24 +656,25 @@
                             ></div>
                           </div>
                           <div>
-                            <p class="font-semibold">Jolina Angelie</p>
+                            <p class="font-semibold">Illuminata Mapua</p>
                             <p class="text-xs text-gray-600 dark:text-gray-400">
-                              Unemployed
+                              Open Org
                             </p>
                           </div>
                         </div>
                       </td>
                       <td class="px-4 py-3 text-sm">
-                        $ 369.95
+                        Proposal
                       </td>
                       <td class="px-4 py-3 text-xs">
-                        <span
-                          class="px-2 py-1 font-semibold leading-tight text-orange-700 bg-orange-100 rounded-full dark:text-white dark:bg-orange-600"
-                        >
+                        <span class="px-2 py-1 font-semibold leading-tight text-orange-700 bg-orange-100 rounded-full dark:text-white dark:bg-orange-600">
                           Pending
                         </span>
                       </td>
                       <td class="px-4 py-3 text-sm">
+                        For Revision
+                      </td>
+                      <td class="px-4 py-3 text-sm">
                         6/10/2020
                       </td>
                     </tr>
@@ -692,7 +688,7 @@
                           >
                             <img
                               class="object-cover w-full h-full rounded-full"
-                              src="https://images.unsplash.com/photo-1551069613-1904dbdcda11?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjE3Nzg0fQ"
+                              src="https://scontent.fmnl30-1.fna.fbcdn.net/v/t1.6435-9/127242674_3714726005215212_3243996682380195767_n.png?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeEpbXnE22gYCHgCYgOeWUVCVETKlEzlC79URMqUTOULv-n6qyOqqKSWxxh85fskWrpW6BQRlVBdvV5-ip5pkA-C&_nc_ohc=M1cIMUFoVbsAX_QVZJe&_nc_ht=scontent.fmnl30-1.fna&oh=36413c2b3465f1145738a0e6ef175355&oe=61682636"
                               alt=""
                               loading="lazy"
                             />
@@ -702,15 +698,15 @@
                             ></div>
                           </div>
                           <div>
-                            <p class="font-semibold">Sarah Curry</p>
+                            <p class="font-semibold">Illuminata Mapua</p>
                             <p class="text-xs text-gray-600 dark:text-gray-400">
-                              Designer
+                              Open Org
                             </p>
                           </div>
                         </div>
                       </td>
                       <td class="px-4 py-3 text-sm">
-                        $ 86.00
+                        Extra Curricular Activity Form
                       </td>
                       <td class="px-4 py-3 text-xs">
                         <span
@@ -720,6 +716,9 @@
                         </span>
                       </td>
                       <td class="px-4 py-3 text-sm">
+                        For Revision
+                      </td>
+                      <td class="px-4 py-3 text-sm">
                         6/10/2020
                       </td>
                     </tr>
@@ -733,7 +732,7 @@
                           >
                             <img
                               class="object-cover w-full h-full rounded-full"
-                              src="https://images.unsplash.com/photo-1551006917-3b4c078c47c9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjE3Nzg0fQ"
+                              src="https://scontent.fmnl30-1.fna.fbcdn.net/v/t1.6435-9/127242674_3714726005215212_3243996682380195767_n.png?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeEpbXnE22gYCHgCYgOeWUVCVETKlEzlC79URMqUTOULv-n6qyOqqKSWxxh85fskWrpW6BQRlVBdvV5-ip5pkA-C&_nc_ohc=M1cIMUFoVbsAX_QVZJe&_nc_ht=scontent.fmnl30-1.fna&oh=36413c2b3465f1145738a0e6ef175355&oe=61682636"
                               alt=""
                               loading="lazy"
                             />
@@ -743,15 +742,15 @@
                             ></div>
                           </div>
                           <div>
-                            <p class="font-semibold">Rulia Joberts</p>
+                            <p class="font-semibold">Illuminata Mapua</p>
                             <p class="text-xs text-gray-600 dark:text-gray-400">
-                              Actress
+                              Open Org
                             </p>
                           </div>
                         </div>
                       </td>
                       <td class="px-4 py-3 text-sm">
-                        $ 1276.45
+                        Proposal
                       </td>
                       <td class="px-4 py-3 text-xs">
                         <span
@@ -761,6 +760,9 @@
                         </span>
                       </td>
                       <td class="px-4 py-3 text-sm">
+                        For Revision
+                      </td>
+                      <td class="px-4 py-3 text-sm">
                         6/10/2020
                       </td>
                     </tr>
@@ -774,7 +776,7 @@
                           >
                             <img
                               class="object-cover w-full h-full rounded-full"
-                              src="https://images.unsplash.com/photo-1546456073-6712f79251bb?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjE3Nzg0fQ"
+                              src="https://scontent.fmnl30-1.fna.fbcdn.net/v/t1.6435-9/127242674_3714726005215212_3243996682380195767_n.png?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeEpbXnE22gYCHgCYgOeWUVCVETKlEzlC79URMqUTOULv-n6qyOqqKSWxxh85fskWrpW6BQRlVBdvV5-ip5pkA-C&_nc_ohc=M1cIMUFoVbsAX_QVZJe&_nc_ht=scontent.fmnl30-1.fna&oh=36413c2b3465f1145738a0e6ef175355&oe=61682636"
                               alt=""
                               loading="lazy"
                             />
@@ -784,15 +786,15 @@
                             ></div>
                           </div>
                           <div>
-                            <p class="font-semibold">Wenzel Dashington</p>
+                            <p class="font-semibold">Illumminata Mapua</p>
                             <p class="text-xs text-gray-600 dark:text-gray-400">
-                              Actor
+                              Open Org
                             </p>
                           </div>
                         </div>
                       </td>
                       <td class="px-4 py-3 text-sm">
-                        $ 863.45
+                        Proposal
                       </td>
                       <td class="px-4 py-3 text-xs">
                         <span
@@ -802,168 +804,7 @@
                         </span>
                       </td>
                       <td class="px-4 py-3 text-sm">
-                        6/10/2020
-                      </td>
-                    </tr>
-
-                    <tr class="text-gray-700 dark:text-gray-400">
-                      <td class="px-4 py-3">
-                        <div class="flex items-center text-sm">
-                          <!-- Avatar with inset shadow -->
-                          <div
-                            class="relative hidden w-8 h-8 mr-3 rounded-full md:block"
-                          >
-                            <img
-                              class="object-cover w-full h-full rounded-full"
-                              src="https://images.unsplash.com/photo-1502720705749-871143f0e671?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=b8377ca9f985d80264279f277f3a67f5"
-                              alt=""
-                              loading="lazy"
-                            />
-                            <div
-                              class="absolute inset-0 rounded-full shadow-inner"
-                              aria-hidden="true"
-                            ></div>
-                          </div>
-                          <div>
-                            <p class="font-semibold">Dave Li</p>
-                            <p class="text-xs text-gray-600 dark:text-gray-400">
-                              Influencer
-                            </p>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="px-4 py-3 text-sm">
-                        $ 863.45
-                      </td>
-                      <td class="px-4 py-3 text-xs">
-                        <span
-                          class="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-full dark:bg-green-700 dark:text-green-100"
-                        >
-                          Approved
-                        </span>
-                      </td>
-                      <td class="px-4 py-3 text-sm">
-                        6/10/2020
-                      </td>
-                    </tr>
-
-                    <tr class="text-gray-700 dark:text-gray-400">
-                      <td class="px-4 py-3">
-                        <div class="flex items-center text-sm">
-                          <!-- Avatar with inset shadow -->
-                          <div
-                            class="relative hidden w-8 h-8 mr-3 rounded-full md:block"
-                          >
-                            <img
-                              class="object-cover w-full h-full rounded-full"
-                              src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjE3Nzg0fQ"
-                              alt=""
-                              loading="lazy"
-                            />
-                            <div
-                              class="absolute inset-0 rounded-full shadow-inner"
-                              aria-hidden="true"
-                            ></div>
-                          </div>
-                          <div>
-                            <p class="font-semibold">Maria Ramovic</p>
-                            <p class="text-xs text-gray-600 dark:text-gray-400">
-                              Runner
-                            </p>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="px-4 py-3 text-sm">
-                        $ 863.45
-                      </td>
-                      <td class="px-4 py-3 text-xs">
-                        <span
-                          class="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-full dark:bg-green-700 dark:text-green-100"
-                        >
-                          Approved
-                        </span>
-                      </td>
-                      <td class="px-4 py-3 text-sm">
-                        6/10/2020
-                      </td>
-                    </tr>
-
-                    <tr class="text-gray-700 dark:text-gray-400">
-                      <td class="px-4 py-3">
-                        <div class="flex items-center text-sm">
-                          <!-- Avatar with inset shadow -->
-                          <div
-                            class="relative hidden w-8 h-8 mr-3 rounded-full md:block"
-                          >
-                            <img
-                              class="object-cover w-full h-full rounded-full"
-                              src="https://images.unsplash.com/photo-1566411520896-01e7ca4726af?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjE3Nzg0fQ"
-                              alt=""
-                              loading="lazy"
-                            />
-                            <div
-                              class="absolute inset-0 rounded-full shadow-inner"
-                              aria-hidden="true"
-                            ></div>
-                          </div>
-                          <div>
-                            <p class="font-semibold">Hitney Wouston</p>
-                            <p class="text-xs text-gray-600 dark:text-gray-400">
-                              Singer
-                            </p>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="px-4 py-3 text-sm">
-                        $ 863.45
-                      </td>
-                      <td class="px-4 py-3 text-xs">
-                        <span
-                          class="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-full dark:bg-green-700 dark:text-green-100"
-                        >
-                          Approved
-                        </span>
-                      </td>
-                      <td class="px-4 py-3 text-sm">
-                        6/10/2020
-                      </td>
-                    </tr>
-
-                    <tr class="text-gray-700 dark:text-gray-400">
-                      <td class="px-4 py-3">
-                        <div class="flex items-center text-sm">
-                          <!-- Avatar with inset shadow -->
-                          <div
-                            class="relative hidden w-8 h-8 mr-3 rounded-full md:block"
-                          >
-                            <img
-                              class="object-cover w-full h-full rounded-full"
-                              src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjE3Nzg0fQ"
-                              alt=""
-                              loading="lazy"
-                            />
-                            <div
-                              class="absolute inset-0 rounded-full shadow-inner"
-                              aria-hidden="true"
-                            ></div>
-                          </div>
-                          <div>
-                            <p class="font-semibold">Hans Burger</p>
-                            <p class="text-xs text-gray-600 dark:text-gray-400">
-                              10x Developer
-                            </p>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="px-4 py-3 text-sm">
-                        $ 863.45
-                      </td>
-                      <td class="px-4 py-3 text-xs">
-                        <span
-                          class="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-full dark:bg-green-700 dark:text-green-100"
-                        >
-                          Approved
-                        </span>
+                        For Revision
                       </td>
                       <td class="px-4 py-3 text-sm">
                         6/10/2020

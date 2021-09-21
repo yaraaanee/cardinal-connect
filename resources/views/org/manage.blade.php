@@ -569,30 +569,19 @@
             <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
               Forms
             </h2>
-            <!-- General elements -->
             <h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">
-              Elements
+              Create an Event
             </h4>
             <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
               <label class="block text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Name of Organization</span>
+                <span class="text-gray-700 dark:text-gray-400">Event Title</span>
                 <input
                   class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                  placeholder="Org Name (Initials)"
-                />
+                  placeholder="Org Name (Initials)"/>
               </label>
 
               <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Nature of the Activity</span>
-                <textarea
-                  class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
-                  rows="2"
-                  placeholder="Enter some long form content."
-                ></textarea>
-              </label>
-
-              <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Objectives of the Activity</span>
+                <span class="text-gray-700 dark:text-gray-400">Event Description</span>
                 <textarea
                   class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
                   rows="2"
@@ -600,37 +589,67 @@
                 ></textarea>
               </label>
               
-              <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400"> Type of Event </span>
-                <select class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
-                  <option>Online</option>
-                  <option>Onsite</option>
-                </select>
-              </label>
-
-              <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Medium of Event</span>
-                <input
-                  class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                  placeholder="Org Name (Initials)"/>
-              </label>
-
-          
-              <div class="flex mt-6 text-sm">
-                <label class="flex items-center dark:text-gray-400">
-                  <input
-                    type="checkbox"
-                    class="text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
-                  />
-                  <span class="ml-3">
-                  We, the undersigned students/faculty members/organizer/adviser of the Mapua Institute of Technology, shall hold 
-                  ourselves jointly and severally responsible for any injury to persons arising from the activity that we applied for, and we 
-                  shall supervise the activity and comply with school policies e.g. no alcoholic beverages and other unlawful activities during the activity.
-                   <!-- <span class="underline">privacy policy</span> -->
-                  </span>
-                </label>
+              <div class="mt-4 text-sm">
+                <span class="text-gray-700 dark:text-gray-400">Event Price</span>
+                <div class="mt-2">
+                  <label class="inline-flex items-center text-gray-600 dark:text-gray-400">
+                    <input
+                      type="radio"
+                      class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                      name="accountType"
+                      value="personal"/>
+                    <span class="ml-2">Free</span>
+                  </label>
+                  <label class="inline-flex items-center ml-6 text-gray-600 dark:text-gray-400">
+                    <input
+                      type="radio"
+                      class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                      name="accountType"
+                      value="busines"
+                    />
+                    <span class="ml-2">Paid</span>
+                  </label>
+                </div>
               </div>
-              <br>
+
+              <label class="block mt-4 text-sm">
+                <span class="text-gray-700 dark:text-gray-400">Event Setting</span>
+                <select class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
+                  <option>Onsite</option>
+                  <option>Online</option>
+                  <option>To be announced</option>
+                </select>
+              </label> <br>
+              
+              <div
+                x-data
+                x-init="flatpickr($refs.datetimewidget, {wrap: true, enableTime: true, dateFormat: 'M j, Y h:i K'});"
+                x-ref="datetimewidget"
+                class="flatpickr container mx-auto col-span-6 sm:col-span-6 mt-5">
+                  <label for="datetime" class="flex-grow text-sm text-gray-700 dark:text-gray-400">Date and Time</label>
+                  <div class="flex align-middle align-content-center">
+                      <input
+                          x-ref="datetime"
+                          type="text"
+                          id="datetime"
+                          data-input
+                          placeholder="Select.."
+                          class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
+        
+                          <a class="h-11 w-10 input-button cursor-pointer rounded-r-md bg-transparent border-gray-300 border-t border-b border-r"
+                              title="clear" data-clear>
+                              <svg xmlns="http://www.w3.org/2000/svg" class="" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                              </svg>
+                              
+                          </a>
+                      </div>
+                  </div>
+                      <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.9/flatpickr.min.js"></script>
+                      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.9/themes/airbnb.min.css">
+                      <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script> <br>
+                      
+              <!-- Submit Button -->       
               <div>
                 <button class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
                   Submit
@@ -638,260 +657,166 @@
               </div>
             </div>
 
-            <!-- Validation inputs -->
-            <h4
-              class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300"
-            >
-              Validation
+
+            <!-- sample Form -->
+            <h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">
+              Sample Form
             </h4>
-            <div
-              class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800"
-            >
-              <!-- Invalid input -->
-              <label class="block text-sm">
-                <span class="text-gray-700 dark:text-gray-400">
-                  Invalid input
-                </span>
-                <input
-                  class="block w-full mt-1 text-sm border-red-600 dark:text-gray-300 dark:bg-gray-700 focus:border-red-400 focus:outline-none focus:shadow-outline-red form-input"
-                  placeholder="Jane Doe"
-                />
-                <span class="text-xs text-red-600 dark:text-red-400">
-                  Your password is too short.
-                </span>
-              </label>
+            <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
+                <label class="block text-sm"> 
+                    <span class="text-gray-700 dark:text-gray-400">Name of Organization</span> 
+                    <input class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                      placeholder="Org Name (Initials)"/>
+                  </label>
 
-              <!-- Valid input -->
-              <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">
-                  Valid input
-                </span>
-                <input
-                  class="block w-full mt-1 text-sm border-green-600 dark:text-gray-300 dark:bg-gray-700 focus:border-green-400 focus:outline-none focus:shadow-outline-green form-input"
-                  placeholder="Jane Doe"
-                />
-                <span class="text-xs text-green-600 dark:text-green-400">
-                  Your password is strong.
-                </span>
-              </label>
+                  <label class="block mt-4 text-sm">
+                    <span class="text-gray-700 dark:text-gray-400">Nature of the Activity</span>
+                    <textarea
+                      class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                      rows="2"
+                      placeholder="Enter some long form content."
+                    ></textarea>
+                  </label>
 
-              <!-- Helper text -->
+                  <label class="block mt-4 text-sm">
+                    <span class="text-gray-700 dark:text-gray-400">Objectives of the Activity</span>
+                    <textarea
+                      class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                      rows="2"
+                      placeholder="Enter some long form content."
+                    ></textarea>
+                  </label>
+
               <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">
-                  Helper text
-                </span>
-                <input
-                  class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
-                  placeholder="Jane Doe"
-                />
-                <span class="text-xs text-gray-600 dark:text-gray-400">
-                  Your password must be at least 6 characters long.
-                </span>
-              </label>
+                <span class="text-gray-700 dark:text-gray-400">Medium of Event</span>
+                <input class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                  placeholder="Org Name (Initials)"/> <br>
+                  <div class="relative">
+                        <input class="block w-full pl-20 mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
+                          placeholder="Title of File"/>
+                        <button class="absolute inset-y-0 px-4 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-l-md active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray" >
+                          Click </button>
+                  </div> <br>
+
+                    <input type="checkbox" class="text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"/>
+                      <span class="ml-3">
+                      We, the undersigned students/faculty members/organizer/adviser of the Mapua Institute of Technology, shall hold 
+                      ourselves jointly and severally responsible for any injury to persons arising from the activity that we applied for, and we 
+                      shall supervise the activity and comply with school policies e.g. no alcoholic beverages and other unlawful activities during the activity.
+                      <br>
+                      </span> <br> 
+                      <button class="block w-full px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                      Submit </button>
+                </label>
             </div>
+      
+            <!--<div class="container px-6 mx-auto grid"> -->
+            <!-- General elements -->
+            <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
+            <ul class="block w-11/12 my-4 mx-auto" x-data="{selected:null}">
+              <li class="flex align-center flex-col">
+                  <h4 @click="selected !== 0 ? selected = 0 : selected = null"
+                      class="cursor-pointer px-5 py-3 text-black text-left inline-block hover:opacity-75 hover:shadow hover:-mb-3 rounded-t">Extra Curricular Activity Form </h4> 
+                  <label x-show="selected == 0" class="border py-4 px-2">
+                    <!-- ExtraCurricular Form -->
+                  <div class="container px-6 mx-auto grid">
+                  <label class="block text-sm"> 
+                      <span class="text-gray-700 dark:text-gray-400">Name of Organization</span> 
+                      <input class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                        placeholder="Org Name (Initials)"/>
+                    </label>
 
-            <!-- Inputs with icons -->
-            <h4
-              class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300"
-            >
-              Icons
-            </h4>
-            <div
-              class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800"
-            >
-              <label class="block text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Icon left</span>
-                <!-- focus-within sets the color for the icon when input is focused -->
-                <div
-                  class="relative text-gray-500 focus-within:text-purple-600 dark:focus-within:text-purple-400"
-                >
-                  <input
-                    class="block w-full pl-10 mt-1 text-sm text-black dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
-                    placeholder="Jane Doe"
-                  />
-                  <div
-                    class="absolute inset-y-0 flex items-center ml-3 pointer-events-none"
-                  >
-                    <svg
-                      class="w-5 h-5"
-                      aria-hidden="true"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-              </label>
+                    <label class="block mt-4 text-sm">
+                      <span class="text-gray-700 dark:text-gray-400">Nature of the Activity</span>
+                      <textarea
+                        class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                        rows="2"
+                        placeholder="Enter some long form content."
+                      ></textarea>
+                    </label>
 
-              <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Icon right</span>
-                <!-- focus-within sets the color for the icon when input is focused -->
-                <div
-                  class="relative text-gray-500 focus-within:text-purple-600 dark:focus-within:text-purple-400"
-                >
-                  <input
-                    class="block w-full pr-10 mt-1 text-sm text-black dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
-                    placeholder="Jane Doe"
-                  />
-                  <div
-                    class="absolute inset-y-0 right-0 flex items-center mr-3 pointer-events-none"
-                  >
-                    <svg
-                      class="w-5 h-5"
-                      aria-hidden="true"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-              </label>
-            </div>
+                    <label class="block mt-4 text-sm">
+                      <span class="text-gray-700 dark:text-gray-400">Objectives of the Activity</span>
+                      <textarea
+                        class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                        rows="2"
+                        placeholder="Enter some long form content."
+                      ></textarea>
+                    </label>
 
-            <!-- Inputs with buttons -->
-            <h4
-              class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300"
-            >
-              Buttons
-            </h4>
-            <div
-              class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800"
-            >
-              <label class="block text-sm">
-                <span class="text-gray-700 dark:text-gray-400">
-                  Button left
-                </span>
-                <div class="relative">
-                  <input
-                    class="block w-full pl-20 mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
-                    placeholder="Jane Doe"
-                  />
-                  <button
-                    class="absolute inset-y-0 px-4 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-l-md active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
-                  >
-                    Click
-                  </button>
-                </div>
-              </label>
-
-              <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">
-                  Button right
-                </span>
-                <div class="relative text-gray-500 focus-within:text-purple-600">
-                  <input
-                    class="block w-full pr-20 mt-1 text-sm text-black dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
-                    placeholder="Jane Doe"/>
-                  <button
-                    class="absolute inset-y-0 right-0 px-4 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-r-md active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
-                  >
-                    Click
-                  </button>
-                </div>
-              </label>
-            </div>
-          </div>
-          
-                      <div class="container px-6 mx-auto grid">
-                        <!-- General elements -->
-                        <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
-                      <ul class="block w-11/12 my-4 mx-auto" x-data="{selected:null}">
-                        <li class="flex align-center flex-col">
-                            <h4 @click="selected !== 0 ? selected = 0 : selected = null"
-                                class="cursor-pointer px-5 py-3 text-black text-left inline-block hover:opacity-75 hover:shadow hover:-mb-3 rounded-t">Extra Curricular Activity Form</h4>
-                            <label x-show="selected == 0" class="border py-4 px-2">
-                              <!-- ExtraCurricular Form -->
-                            <label class="block text-sm"> 
-                                <span class="text-gray-700 dark:text-gray-400">Name of Organization</span>
-                                <input class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                                  placeholder="Org Name (Initials)"/>
-                              </label>
-
-                              <label class="block mt-4 text-sm">
-                                <span class="text-gray-700 dark:text-gray-400">Nature of the Activity</span>
-                                <textarea
-                                  class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
-                                  rows="2"
-                                  placeholder="Enter some long form content."
-                                ></textarea>
-                              </label>
-
-                              <label class="block mt-4 text-sm">
-                                <span class="text-gray-700 dark:text-gray-400">Objectives of the Activity</span>
-                                <textarea
-                                  class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
-                                  rows="2"
-                                  placeholder="Enter some long form content."
-                                ></textarea>
-                              </label>
-
-                              <label class="block mt-4 text-sm">
-                                <span class="text-gray-700 dark:text-gray-400"> Type of Event </span>
-                                <select class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
-                                  <option>Online</option>
-                                  <option>Onsite</option>
-                                </select>
-                              </label>
-
-                              <label class="block mt-4 text-sm">
-                                <span class="text-gray-700 dark:text-gray-400">Medium of Event</span>
-                                <input class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                                  placeholder="Org Name (Initials)"/> <br>
-                                  <div class="relative">
-                                        <input class="block w-full pl-20 mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
-                                          placeholder="Jane Doe"/>
-                                        <button class="absolute inset-y-0 px-4 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-l-md active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray" >
-                                          Click </button>
-                                      </div> <br>
-
-                                  <input type="checkbox" class="text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"/>
-                                    <span class="ml-3">
-                                    We, the undersigned students/faculty members/organizer/adviser of the Mapua Institute of Technology, shall hold 
-                                    ourselves jointly and severally responsible for any injury to persons arising from the activity that we applied for, and we 
-                                    shall supervise the activity and comply with school policies e.g. no alcoholic beverages and other unlawful activities during the activity.
-                                    <br>
-                                    </span> <br> 
-                                    <button class="block w-full px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
-                                    Submit </button>
-                              </label>
-                              
-                            </label>
-                          </li>
-                        
-                        <li class="flex align-center flex-col">
-                            <h4 @click="selected !== 1 ? selected = 1 : selected = null"
-                                class="cursor-pointer px-5 py-3  text-black text-left inline-block hover:opacity-75 hover:shadow hover:-mb-3">Co Curricular Activity Form</h4>
-                            <label x-show="selected == 1" class="border py-4 px-2">
-                               
+                    <div class="mt-4 text-sm">
+                      <span class="text-gray-700 dark:text-gray-400">Event Setting</span>
+                      <div class="mt-2">
+                        <label class="inline-flex items-center text-gray-600 dark:text-gray-400">
+                          <input
+                            type="radio"
+                            class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                            name="accountType"
+                            value="personal"/>
+                          <span class="ml-2">Onsite</span>
                         </label>
-                        </li>
+                        <label class="inline-flex items-center ml-6 text-gray-600 dark:text-gray-400">
+                          <input
+                            type="radio"
+                            class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                            name="accountType"
+                            value="busines"/>
+                          <span class="ml-2">Online</span>
+                        </label>
+                      </div>
+                    </div>
 
-                        <li class="flex align-center flex-col">
-                            <h4 @click="selected !== 2 ? selected = 2 : selected = null"
-                                :class="{'cursor-pointer px-5 py-3 text-black text-left inline-block hover:opacity-75 hover:shadow hover:-mb-3': true, 'rounded-b': selected != 2}">Accordion item 3</h4>
-                            <label x-show="selected == 2" :class="{'border py-4 px-2': true, 'rounded-b': selected == 2}">
 
-                            
+                    <label class="block mt-4 text-sm">
+                      <span class="text-gray-700 dark:text-gray-400">Medium of Event</span>
+                      <input class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                        placeholder="Org Name (Initials)"/> <br>
+                        <div class="relative">
+                              <input class="block w-full pl-20 mt-2 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
+                                placeholder="Choose file" disabled/>
+                              <button class="absolute inset-y-0 px-4 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-l-md active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray" >
+                                Find </button>
+                            </div> <br>
+
+                        <input type="checkbox" class="text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"/>
+                          <span class="ml-3">
+                              We, the undersigned students/faculty members/organizer/adviser of the Mapua Institute of Technology, shall hold 
+                              ourselves jointly and severally responsible for any injury to persons arising from the activity that we applied for, and we 
+                              shall supervise the activity and comply with school policies e.g. no alcoholic beverages and other unlawful activities during the activity.
+                          <br>
+                          </span> <br> 
+                          <button class="block w-full px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                          Submit </button>
+                  </label>
+                </li>
+                        
+                <li class="flex align-center flex-col">
+                    <h4 @click="selected !== 1 ? selected = 1 : selected = null"
+                        class="cursor-pointer px-5 py-3  text-black text-left inline-block hover:opacity-75 hover:shadow hover:-mb-3">Co Curricular Activity Form</h4>
+                    <label x-show="selected == 1" class="border py-4 px-2">
+                        
+                </label>
+                </li>
+
+                <li class="flex align-center flex-col">
+                    <h4 @click="selected !== 2 ? selected = 2 : selected = null"
+                        :class="{'cursor-pointer px-5 py-3 text-black text-left inline-block hover:opacity-75 hover:shadow hover:-mb-3': true, 'rounded-b': selected != 2}">Post Activity Report</h4>
+                    <label x-show="selected == 2" :class="{'border py-4 px-2': true, 'rounded-b': selected == 2}">
+                    <div class="container px-6">
+                      <label class="block mt-1 text-sm text-gray-700 dark:text-gray-400"> Upload the Post Activity Report file </label> <br>
+                    <div class="relative">
+                                <input class="block w-full pl-20 mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
+                                  placeholder="Title of File"/>
+                                <button class="absolute inset-y-0 px-4 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-l-md active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray" >
+                                  Find </button>
+                              </div> <br>
+                              <button class="block w-full px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                            Submit </button>
                         </li>
                     </ul>
-                </body>
-            </div>
-
-      </div>
-    </div>
-  </body>
+              </div>
+          </div>
+        </div> 
+      </main>
+    </body>
 </html>

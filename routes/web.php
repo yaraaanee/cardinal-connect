@@ -45,6 +45,14 @@ Route::get('/student/home', function () {
     return view('student.home');
 });
 
+Route::get('/student/events', function () {
+    return view('student.events');
+});
+
+Route::get('/student/evals', function () {
+    return view('student.evals');
+});
+
 Route::get('/login', function () {
     return view('login');
 });
@@ -52,6 +60,8 @@ Route::get('/login', function () {
 Route::get('/login', function () {
     return view('login');
 });
+
+
 
 Auth::routes();
 

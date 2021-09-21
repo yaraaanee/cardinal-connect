@@ -6,8 +6,7 @@
     <title>Home | Cardinal Connect</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
     <link rel="stylesheet" href="../assets/css/tailwind.output.css" />
     <script
       src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
@@ -28,16 +27,15 @@
         <div class="py-4 text-gray-500 dark:text-gray-400">
           <a
             class="ml-6 text-lg font-bold text-gray-800 dark:text-gray-200"
-            href="/org/home"
-          >
+            href="/osa/home">
             Cardinal Connect
           </a>
           <ul class="mt-6">
+            <!-- Dashboard -->
             <li class="relative px-6 py-3">
               <a
                 class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
-                href="/org/home"
-              >
+                href="/osa/home">
                 <svg
                   class="w-5 h-5"
                   aria-hidden="true"
@@ -55,34 +53,13 @@
                 <span class="ml-4">Dashboard</span>
               </a>
             </li>
-            
-            <!-- Manage-->
+        
+            <!-- Manage -->
             <li class="relative px-6 py-3">
-              <!-- ACTIVE TAB INDICATOR -->
-              <span
-                class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
-                aria-hidden="true"></span>
-              <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100" href="/org/manage">
-
-                <svg
-                  class="w-5 h-5"
-                  aria-hidden="true"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
-                </svg>
-                <span class="ml-4">Manage</span>
-              </a>
-            </li>
-          <!-- Documents -->
-            <li class="relative px-6 py-3">
+            <span class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg" aria-hidden="true"
+              ></span>
               <button
-                class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                class=" inline-flex items-center w-full justify-between text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
                 @click="togglePagesMenu"
                 aria-haspopup="true"
               >
@@ -98,10 +75,10 @@
                     stroke="currentColor"
                   >
                     <path
-                      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
                     ></path>
                   </svg>
-                  <span class="ml-4">Documents</span>
+                  <span class="ml-4">Events</span>
                 </span>
                 <svg
                   class="w-4 h-4"
@@ -127,16 +104,14 @@
                   class="p-2 mt-2 space-y-2 overflow-hidden text-sm font-medium text-gray-500 rounded-md shadow-inner bg-gray-50 dark:text-gray-400 dark:bg-gray-900"
                   aria-label="submenu"
                 >
-                  <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                    <a class="w-full" href="/org/logs"> Logs </a>
+                <!-- Dropdown Pages -->
+                <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
+                    <a class="w-full" href="/student/events">Registration</a>
                   </li>
                   <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                    <a class="w-full" href="/org/applications"> Applications </a>
+                    <a class="w-full" href="/student/evals"> Student Evaluation </a>
                   </li>
-                  <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                    <a class="w-full" href="/org/par"> Post Activity Reports </a>
-                  </li>
-                </ul>
+                </ul>               
               </template>
             </li>
           </ul>
@@ -177,11 +152,12 @@
         <div class="py-4 text-gray-500 dark:text-gray-400">
           <a
             class="ml-6 text-lg font-bold text-gray-800 dark:text-gray-200"
-            href="#"
+            href="/student/home"
           >
             Cardinal Connect
           </a>
           <ul class="mt-6">
+            <!-- (Mobile) Dashboard Tab -->
             <li class="relative px-6 py-3">
               <span
                 class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
@@ -189,7 +165,7 @@
               ></span>
               <a
                 class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
-                href="index.html"
+                href="/student/home"
               >
                 <svg
                   class="w-5 h-5"
@@ -210,28 +186,7 @@
             </li>
           </ul>
           <ul>
-            <li class="relative px-6 py-3">
-              <a
-                class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
-                href="forms.html"
-              >
-                <svg
-                  class="w-5 h-5"
-                  aria-hidden="true"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
-                  ></path>
-                </svg>
-                <span class="ml-4">Manage</span>
-              </a>
-            </li>
+            <!-- (Mobile) Events Tab -->
             <li class="relative px-6 py-3">
               <button
                 class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
@@ -250,10 +205,10 @@
                     stroke="currentColor"
                   >
                     <path
-                      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                      d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"
                     ></path>
                   </svg>
-                  <span class="ml-4">Documents</span>
+                  <span class="ml-4">Pages</span>
                 </span>
                 <svg
                   class="w-4 h-4"
@@ -282,14 +237,14 @@
                   <li
                     class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                   >
-                    <a class="w-full" href="/org/logs"> Logs </a>
+                    <a class="w-full" href="/student/events"></a>
                   </li>
                   <li
-                    class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                    <a class="w-full" href="pages/forgot-password.html"> Application </a>
-                  </li>
-                  <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                    <a class="w-full" href="pages/404.html">Post Activity Reports</a>
+                    class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                  >
+                    <a class="w-full" href="/student/evals">
+                      Student Evaluation
+                    </a>
                   </li>
                 </ul>
               </template>
@@ -299,7 +254,7 @@
             <button
               class="flex items-center justify-between px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
             >
-              <!-- Create account -->
+              Create account
               <span class="ml-2" aria-hidden="true">+</span>
             </button>
           </div>
@@ -562,339 +517,15 @@
             </ul>
           </div>
         </header>
-
-        <!-- BODY -->
         <main class="h-full pb-16 overflow-y-auto">
+          <!-- Remove everything INSIDE this div to a really blank page -->
           <div class="container px-6 mx-auto grid">
-            <h2
-              class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200"
-            >
-              Forms
+            <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
+              Dashboard </h2>
+
             </h2>
-            <!-- General elements -->
-            <h4
-              class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300"
-            >
-              Elements
-            </h4>
-            <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
-              <label class="block text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Name of Organization</span>
-                <input
-                  class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                  placeholder="Org Name (Initials)"
-                />
-              </label>
-
-              <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Nature of the Activity</span>
-                <textarea
-                  class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
-                  rows="2"
-                  placeholder="Enter some long form content."
-                ></textarea>
-              </label>
-
-              <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Objectives of the Activity</span>
-                <textarea
-                  class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
-                  rows="2"
-                  placeholder="Enter some long form content."
-                ></textarea>
-              </label>
-              
-              <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400"> Type of Event </span>
-                <select class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
-                  <option>Online</option>
-                  <option>Onsite</option>
-                </select>
-              </label>
-
-              <label class="block text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Medium of Event</span>
-                <input
-                  class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                  placeholder="Org Name (Initials)"/>
-              </label>
-
-          
-              <div class="flex mt-6 text-sm">
-                <label class="flex items-center dark:text-gray-400">
-                  <input
-                    type="checkbox"
-                    class="text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
-                  />
-                  <span class="ml-3">
-                  We, the undersigned students/faculty members/organizer/adviser of the Mapua Institute of Technology, shall hold 
-                  ourselves jointly and severally responsible for any injury to persons arising from the activity that we applied for, and we 
-                  shall supervise the activity and comply with school policies e.g. no alcoholic beverages and other unlawful activities during the activity.
-                   <!-- <span class="underline">privacy policy</span> -->
-                  </span>
-                </label>
-              </div>
-              <br>
-              <div>
-                <button class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
-                  Submit
-                </button>
-              </div>
-            </div>
-
-            <!-- Validation inputs -->
-            <h4
-              class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300"
-            >
-              Validation
-            </h4>
-            <div
-              class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800"
-            >
-              <!-- Invalid input -->
-              <label class="block text-sm">
-                <span class="text-gray-700 dark:text-gray-400">
-                  Invalid input
-                </span>
-                <input
-                  class="block w-full mt-1 text-sm border-red-600 dark:text-gray-300 dark:bg-gray-700 focus:border-red-400 focus:outline-none focus:shadow-outline-red form-input"
-                  placeholder="Jane Doe"
-                />
-                <span class="text-xs text-red-600 dark:text-red-400">
-                  Your password is too short.
-                </span>
-              </label>
-
-              <!-- Valid input -->
-              <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">
-                  Valid input
-                </span>
-                <input
-                  class="block w-full mt-1 text-sm border-green-600 dark:text-gray-300 dark:bg-gray-700 focus:border-green-400 focus:outline-none focus:shadow-outline-green form-input"
-                  placeholder="Jane Doe"
-                />
-                <span class="text-xs text-green-600 dark:text-green-400">
-                  Your password is strong.
-                </span>
-              </label>
-
-              <!-- Helper text -->
-              <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">
-                  Helper text
-                </span>
-                <input
-                  class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
-                  placeholder="Jane Doe"
-                />
-                <span class="text-xs text-gray-600 dark:text-gray-400">
-                  Your password must be at least 6 characters long.
-                </span>
-              </label>
-            </div>
-
-            <!-- Inputs with icons -->
-            <h4
-              class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300"
-            >
-              Icons
-            </h4>
-            <div
-              class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800"
-            >
-              <label class="block text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Icon left</span>
-                <!-- focus-within sets the color for the icon when input is focused -->
-                <div
-                  class="relative text-gray-500 focus-within:text-purple-600 dark:focus-within:text-purple-400"
-                >
-                  <input
-                    class="block w-full pl-10 mt-1 text-sm text-black dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
-                    placeholder="Jane Doe"
-                  />
-                  <div
-                    class="absolute inset-y-0 flex items-center ml-3 pointer-events-none"
-                  >
-                    <svg
-                      class="w-5 h-5"
-                      aria-hidden="true"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-              </label>
-
-              <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Icon right</span>
-                <!-- focus-within sets the color for the icon when input is focused -->
-                <div
-                  class="relative text-gray-500 focus-within:text-purple-600 dark:focus-within:text-purple-400"
-                >
-                  <input
-                    class="block w-full pr-10 mt-1 text-sm text-black dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
-                    placeholder="Jane Doe"
-                  />
-                  <div
-                    class="absolute inset-y-0 right-0 flex items-center mr-3 pointer-events-none"
-                  >
-                    <svg
-                      class="w-5 h-5"
-                      aria-hidden="true"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-              </label>
-            </div>
-
-            <!-- Inputs with buttons -->
-            <h4
-              class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300"
-            >
-              Buttons
-            </h4>
-            <div
-              class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800"
-            >
-              <label class="block text-sm">
-                <span class="text-gray-700 dark:text-gray-400">
-                  Button left
-                </span>
-                <div class="relative">
-                  <input
-                    class="block w-full pl-20 mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
-                    placeholder="Jane Doe"
-                  />
-                  <button
-                    class="absolute inset-y-0 px-4 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-l-md active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
-                  >
-                    Click
-                  </button>
-                </div>
-              </label>
-
-              <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">
-                  Button right
-                </span>
-                <div
-                  class="relative text-gray-500 focus-within:text-purple-600"
-                >
-                  <input
-                    class="block w-full pr-20 mt-1 text-sm text-black dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
-                    placeholder="Jane Doe"
-                  />
-                  <button
-                    class="absolute inset-y-0 right-0 px-4 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-r-md active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
-                  >
-                    Click
-                  </button>
-                </div>
-              </label>
-            </div>
           </div>
-          
-                      <div class="container px-6 mx-auto grid">
-                        <!-- General elements -->
-                        <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
-                      <ul class="block w-11/12 my-4 mx-auto" x-data="{selected:null}">
-                        <li class="flex align-center flex-col">
-                            <h4 @click="selected !== 0 ? selected = 0 : selected = null"
-                                class="cursor-pointer px-5 py-3 text-black text-left inline-block hover:opacity-75 hover:shadow hover:-mb-3 rounded-t">Extra Curricular Form</h4>
-                            <p x-show="selected == 0" class="border py-4 px-2">
-                              <!-- ExtraCurricular Form -->
-                            <label class="block text-sm"> 
-                                <span class="text-gray-700 dark:text-gray-400">Name of Organization</span>
-                                <input class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                                  placeholder="Org Name (Initials)"/>
-                              </label>
-
-                              <label class="block mt-4 text-sm">
-                                <span class="text-gray-700 dark:text-gray-400">Nature of the Activity</span>
-                                <textarea
-                                  class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
-                                  rows="2"
-                                  placeholder="Enter some long form content."
-                                ></textarea>
-                              </label>
-
-                              <label class="block mt-4 text-sm">
-                                <span class="text-gray-700 dark:text-gray-400">Objectives of the Activity</span>
-                                <textarea
-                                  class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
-                                  rows="2"
-                                  placeholder="Enter some long form content."
-                                ></textarea>
-                              </label>
-
-                              <label class="block mt-4 text-sm"> 
-                                <span class="text-gray-700 dark:text-gray-400">Name of Organization</span>
-                                <input class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                                  placeholder="Org Name (Initials)"/>
-                              </label>
-
-                              <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
-                                <label class="block text-sm">
-                                  <span class="text-gray-700 dark:text-gray-400">
-                                    Button left
-                                  </span>
-                                  <div class="relative">
-                                    <input
-                                      class="block w-full pl-20 mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
-                                      placeholder="Jane Doe"
-                                    />
-                                    <button
-                                      class="absolute inset-y-0 px-4 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-l-md active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
-                                    >
-                                      Click
-                                    </button>
-                                  </div>
-                                </label>
-                            </p>
-                        </li>
-                        
-                        <li class="flex align-center flex-col">
-                            <h4 @click="selected !== 1 ? selected = 1 : selected = null"
-                                class="cursor-pointer px-5 py-3  text-black text-left inline-block hover:opacity-75 hover:shadow hover:-mb-3">Accordion item 2</h4>
-                            <p x-show="selected == 1" class="border py-4 px-2">
-                                There's no external CSS or JS
-                            </p>
-                        </li>
-                        <li class="flex align-center flex-col">
-                            <h4 @click="selected !== 2 ? selected = 2 : selected = null"
-                                :class="{'cursor-pointer px-5 py-3 text-black text-left inline-block hover:opacity-75 hover:shadow hover:-mb-3': true, 'rounded-b': selected != 2}">Accordion item 3</h4>
-                            <p x-show="selected == 2" :class="{'border py-4 px-2': true, 'rounded-b': selected == 2}">
-                                Pretty cool huh?
-                            </p>
-                        </li>
-                    </ul>
-                </body>
-            </div>
-
-
-
-
-          </main>
-        
+        </main>
       </div>
     </div>
   </body>
