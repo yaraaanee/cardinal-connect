@@ -128,10 +128,10 @@
                   aria-label="submenu"
                 >
                   <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                    <a class="w-full" href="/org/logs"> Logs </a>
+                    <a class="w-full" href="/org/logs"> Applications </a>
                   </li>
                   <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                    <a class="w-full" href="/org/applications"> Applications </a>
+                    <a class="w-full" href="/org/applications"> Student Evaluation </a>
                   </li>
                 </ul>
               </template>
