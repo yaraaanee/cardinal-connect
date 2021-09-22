@@ -45,8 +45,8 @@ Route::get('/student/home', function () {
     return view('student.home');
 });
 
-Route::get('/student/events', function () {
-    return view('student.events');
+Route::get('/student/register', function () {
+    return view('student.registration');
 });
 
 Route::get('/student/evals', function () {

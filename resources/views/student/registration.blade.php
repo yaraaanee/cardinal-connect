@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"/>
     <link rel="stylesheet" href="../assets/css/tailwind.output.css" />
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
     <script
       src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
       defer
@@ -27,15 +28,14 @@
         <div class="py-4 text-gray-500 dark:text-gray-400">
           <a
             class="ml-6 text-lg font-bold text-gray-800 dark:text-gray-200"
-            href="/osa/home">
+            href="/student/home">
             Cardinal Connect
           </a>
           <ul class="mt-6">
             <!-- Dashboard -->
             <li class="relative px-6 py-3">
-              <a
-                class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
-                href="/osa/home">
+              <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                href="/student/home">
                 <svg
                   class="w-5 h-5"
                   aria-hidden="true"
@@ -59,7 +59,7 @@
             <span class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg" aria-hidden="true"
               ></span>
               <button
-                class=" inline-flex items-center w-full justify-between text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
+                class="inline-flex items-center w-full justify-between text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
                 @click="togglePagesMenu"
                 aria-haspopup="true"
               >
@@ -152,7 +152,7 @@
         <div class="py-4 text-gray-500 dark:text-gray-400">
           <a
             class="ml-6 text-lg font-bold text-gray-800 dark:text-gray-200"
-            href="/student/home"
+            href="#"
           >
             Cardinal Connect
           </a>
@@ -165,7 +165,7 @@
               ></span>
               <a
                 class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
-                href="/student/home"
+                href="index.html"
               >
                 <svg
                   class="w-5 h-5"
@@ -208,7 +208,7 @@
                       d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"
                     ></path>
                   </svg>
-                  <span class="ml-4">Events</span>
+                  <span class="ml-4">Pages</span>
                 </span>
                 <svg
                   class="w-4 h-4"
@@ -520,9 +520,114 @@
         <main class="h-full pb-16 overflow-y-auto">
           <!-- Remove everything INSIDE this div to a really blank page -->
           <div class="container px-6 mx-auto grid">
-            <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
-              Dashboard </h2>
+              <!-- General elements -->
+            <h4 class="mb-4 mt-4 text-lg font-semibold text-gray-600 dark:text-gray-300"
+            >
+              Student Activity Evaluation Form
+            </h4>
+            
+            <h4
+              class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300"
+            >
+              Elements
+            </h4>
+            <div
+              class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800"
+            >
+              <label class="block text-sm">
+                <span class="text-gray-700 dark:text-gray-400">Name</span>
+                <input
+                  class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                  placeholder="Jane Doe"
+                />
+              </label>
 
+              <div class="mt-4 text-sm">
+                <span class="text-gray-700 dark:text-gray-400">
+                  Account Type
+                </span>
+                <div class="mt-2">
+                  <label
+                    class="inline-flex items-center text-gray-600 dark:text-gray-400"
+                  >
+                    <input
+                      type="radio"
+                      class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                      name="accountType"
+                      value="personal"
+                    />
+                    <span class="ml-2">Personal</span>
+                  </label>
+                  <label
+                    class="inline-flex items-center ml-6 text-gray-600 dark:text-gray-400"
+                  >
+                    <input
+                      type="radio"
+                      class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                      name="accountType"
+                      value="busines"
+                    />
+                    <span class="ml-2">Business</span>
+                  </label>
+                </div>
+              </div>
+
+              <label class="block mt-4 text-sm">
+                <span class="text-gray-700 dark:text-gray-400">
+                  Requested Limit
+                </span>
+                <select
+                  class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                >
+                  <option>$1,000</option>
+                  <option>$5,000</option>
+                  <option>$10,000</option>
+                  <option>$25,000</option>
+                </select>
+              </label>
+
+              <label class="block mt-4 text-sm">
+                <span class="text-gray-700 dark:text-gray-400">
+                  Multiselect
+                </span>
+                <select
+                  class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-multiselect focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                  multiple
+                >
+                  <option>Option 1</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                  <option>Option 4</option>
+                  <option>Option 5</option>
+                </select>
+              </label>
+
+              <label class="block mt-4 text-sm">
+                <span class="text-gray-700 dark:text-gray-400">Message</span>
+                <textarea
+                  class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                  rows="3"
+                  placeholder="Enter some long form content."
+                ></textarea>
+              </label>
+
+              <div class="flex mt-6 text-sm">
+                <label class="flex items-center dark:text-gray-400">
+                  <input
+                    type="checkbox"
+                    class="text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                  />
+                  <span class="ml-2">
+                    I agree to the
+                    <span class="underline">privacy policy</span>
+                  </span>
+                </label>
+              </div>
+            </div>
+              <button class="submit-button mt-2 px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                  Submit
+                </button>
+            </div>
             </h2>
           </div>
         </main>

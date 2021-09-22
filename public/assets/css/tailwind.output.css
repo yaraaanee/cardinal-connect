@@ -944,8 +944,8 @@
         color: #fff; }
     .accordion .accordion-body {
       line-height: 24px; }
-    
-      /* Submit Button - Right */
+
+      /*Submit Button - Right*/
       .submit-button{
-        float: right;
-      }
+          float: right;
+    }

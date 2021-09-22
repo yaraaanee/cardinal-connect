@@ -650,20 +650,23 @@
                 </button>
               </div>
             </div>
-      
-            <!--<div class="container px-6 mx-auto grid"> -->
-            <!-- General elements -->
+            
+
+            <!-- ACCORDION -->
+            <h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">
+              Activity Forms</h4>
+
             <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
             <ul class="block w-11/12 my-4 mx-auto" x-data="{selected:null}">
               <li class="accordion flex align-center flex-col" aria-expanded="true">
                   <h4 @click="selected !== 0 ? selected = 0 : selected = null"
                       class="accordion-header inline-flex items-center justify-between cursor-pointer px-5 py-3 text-black text-left inline-block hover:opacity-75 hover:shadow hover:-mb-3 rounded-t">Extra Curricular Activity Form 
-                      <svg
+                  <svg
                   class="w-4 h-4"
                   aria-hidden="true"
                   fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
+                  viewBox="0 0 20 20">
+
                   <path
                     fill-rule="evenodd"
                     d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
