@@ -949,3 +949,10 @@
       .submit-button{
           float: right;
     }
+
+/* Logout Button */
+.logout-bottom {
+    position: absolute;
+    bottom: 0;
+    /* width: 50%; */
+}
