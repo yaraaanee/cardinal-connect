@@ -945,7 +945,12 @@
     .accordion .accordion-body {
       line-height: 24px; }
 
-      /*Submit Button - Right*/
+    /*Submit Button - Right*/
       .submit-button{
           float: right;
+    }
+    /* Event Cards */
+    .
+    .max-w-med{
+        max-width: 28rem;
     }

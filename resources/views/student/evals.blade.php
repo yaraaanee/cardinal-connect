@@ -106,7 +106,7 @@
                 >
                 <!-- Dropdown Pages -->
                 <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                    <a class="w-full" href="/student/events">Registration</a>
+                    <a class="w-full" href="/student/register">Registration</a>
                   </li>
                   <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
                     <a class="w-full" href="/student/evals"> Student Evaluation </a>
@@ -532,16 +532,27 @@
                   Organization
                 </span>
                 <select
-                  class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
-                >
+                  class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
+                  <option>Illuminata Mapúa</option>
+                  <option>Mapúa Makati Music Association</option>
+                  <option>Mapúa Dance Community</option>
+                  <option>Chief Entrepreneurs Organization</option>
+                  <option>Mapúa Mountaineering Club</option>
+                  <option>Youth for Christ</option>
+                  <option>Mapúa Tabletop Gamers</option>
+
                   <option>SOIT SC</option>
-                  <option>Illuminata Mapua</option>
                   <option>WebMasters Guild</option>
-                  <option>Information Systems Next Gen</option>
-                  <option>Mapua Makati Music Association</option>
-                  <option>Mapua Dance Community</option>
                   <option>Network Society</option>
+                  <option>Mapúa Game Consensus</option>
                   <option>Association for Computing Machinery</option>
+                  <option>Information Systems Next Gen</option>
+                  <option>ETY-SBM SC</option>
+                  <option>JPIA</option>
+                  <option>MJMA</option>
+                  <option>Illuminata Mapúa</option>
+                  <option>Mapúa Makati Music Association</option>
+                  <option>Mapúa Dance Community</option>
                   <option>Chief Entrepreneurs Organization</option>
                 </select>
               </label>
@@ -550,8 +561,7 @@
                 <span class="text-gray-700 dark:text-gray-400">Name</span>
                 <input
                   class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                  placeholder="Jane Doe"
-                />
+                  placeholder="Jane Doe"/>
               </label>
 
               <label class="block mt-4 text-sm">

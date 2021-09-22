@@ -237,7 +237,7 @@
                   <li
                     class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                   >
-                    <a class="w-full" href="/student/register">Registration</a>
+                    <a class="w-full" href="/student/events">Registration</a>
                   </li>
                   <li
                     class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
@@ -418,7 +418,6 @@
                   </ul>
                 </template>
               </li> -->
-
               <!-- Profile menu -->
               <li class="relative">
                 <button
@@ -518,159 +517,76 @@
             </ul>
           </div>
         </header>
-
         <main class="h-full pb-16 overflow-y-auto">
+          <!-- Remove everything INSIDE this div to a really blank page -->
           <div class="container px-6 mx-auto grid">
-            <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
-              Student Registration for Events
+              <!-- General elements -->
+            <h4 class="mb-4 mt-4 text-lg font-semibold text-gray-600 dark:text-gray-300"
+            >
+              Student Activity Evaluation Form
+            </h4>
+            
+            <h4
+              class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300"
+            >
+              Elements
+            </h4>
+            <div
+              class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800"
+            >
+              <label class="block text-sm">
+                <span class="text-gray-700 dark:text-gray-400">Name</span>
+                <input
+                  class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                  placeholder="Juan Dela Cruz" disabled/>
+              </label>
+
+              <label class="block mt-4 text-sm">
+                <span class="text-gray-700 dark:text-gray-400">Email</span>
+                <input
+                  class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                  placeholder="jddelacruz@mymail.mapua.edu.ph" disabled/> <!-- pre-filled since naka log in yung student -->
+              </label>
+
+              <label class="block mt-4 text-sm">
+                <span class="text-gray-700 dark:text-gray-400">
+                  Organization
+                </span>
+                <select
+                  class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                >
+                  <option>SOIT SC</option>
+                  <option>Illuminata Mapua</option>
+                  <option>WebMasters Guild</option>
+                  <option>Information Systems Next Gen</option>
+                  <option>Mapua Makati Music Association</option>
+                  <option>Mapua Dance Community</option>
+                  <option>Network Society</option>
+                  <option>Association for Computing Machinery</option>
+                  <option>Chief Entrepreneurs Organization</option>
+                </select>
+              </label>
+
+              <div class="flex mt-6 text-sm">
+                <label class="flex items-center dark:text-gray-400">
+                  <input
+                    type="checkbox"
+                    class="text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                  />
+                  <span class="ml-2">
+                    I agree to the
+                    <span class="underline">privacy policy</span>
+                  </span>
+                </label>
+                </div>
+                <button class="submit-button mt-2 px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                  Submit
+                </button>
+                </div>
+              </div>
+
             </h2>
-            <div class="grid gap-6 mb-8 md:grid-cols-4 xl:grid-cols-4">
-
-          <!-- Card -->
-          <div class="max-w-med mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
-              <img class="object-cover w-full h-32" src="https://scontent.fmnl30-1.fna.fbcdn.net/v/t1.6435-9/191653768_1837211159776373_1406884219945193703_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=e3f864&_nc_ohc=aDqklNtJJNkAX9M0W_K&tn=cW8Mgcb9emuMtob4&_nc_ht=scontent.fmnl30-1.fna&oh=f054b7aa152074815710dd7fe2d0d868&oe=6170A75D" alt="Article">
-
-              <div class="px-6 py-4">
-                  <div>
-                  <span class="text-xs font-medium text-blue-600 uppercase dark:text-blue-400">Event</span>
-                      <a href="#" class="block mt-2 text-l font-semibold text-gray-800 dark:text-white hover:text-gray-600 hover:underline">LEADERSHIP SUMMIT</a>
-                      <p class="mt-2 text-xs text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  </div>
-
-                  <div class="mt-4">
-                     <div class="flex items-center space-x-3">
-                          <div class="flex items-center space-x-3">
-                              <img class="object-cover h-8 rounded-full" src="https://scontent.fmnl30-2.fna.fbcdn.net/v/t39.30808-6/233120337_1895602473937241_2422289550683056379_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=wDaHSEDh7VAAX_F-ocN&_nc_ht=scontent.fmnl30-2.fna&oh=138f294836d44ebf81d5b945c4bf461a&oe=614FC328" alt="Avatar">
-                              <a class="mx-2 text-xs font-semibold text-gray-700 dark:text-gray-200">Mapua SOIT SC</a>
-                          </div>
-                          <span class="mx-1 text-xs text-gray-600 dark:text-gray-300">21 SEP 2015</span>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="object-cover w-full">
-                  <button class="w-full mt-1 px-4 py-2 text-xs font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
-                     Register
-                    </button>
-              </div>
           </div>
-
-          <!-- Card -->
-          <div class="max-w-med mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
-              <img class="object-cover w-full h-32" src="https://scontent.fmnl30-1.fna.fbcdn.net/v/t1.6435-9/191653768_1837211159776373_1406884219945193703_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=e3f864&_nc_ohc=aDqklNtJJNkAX9M0W_K&tn=cW8Mgcb9emuMtob4&_nc_ht=scontent.fmnl30-1.fna&oh=f054b7aa152074815710dd7fe2d0d868&oe=6170A75D" alt="Article">
-
-              <div class="px-6 py-4">
-                  <div>
-                      <span class="text-xs font-medium text-blue-600 uppercase dark:text-white-400">Webinar</span>
-                      <a class="block mt-2 text-l font-semibold text-gray-800 dark:text-white hover:text-gray-600 hover:underline">Creative Leaders</a>
-                      <p class="mt-2 text-xs text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  </div>
-
-                  <div class="mt-4">
-                     <div class="flex items-center space-x-3">
-                          <div class="flex items-center space-x-3">
-                              <img class="object-cover h-8 rounded-full" src="https://scontent.fmnl30-1.fna.fbcdn.net/v/t1.6435-9/127242674_3714726005215212_3243996682380195767_n.png?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=cEDiDzCBtr8AX-Io-YY&_nc_ht=scontent.fmnl30-1.fna&oh=422164ec7709381d470f5288a95594f4&oe=61700F36" alt="Avatar">
-                              <a class="mx-2 text-xs font-semibold text-gray-700 dark:text-gray-200">Illuminata</a>
-                          </div>
-                          <span class="mx-1 text-xs text-gray-600 dark:text-gray-300">21 SEP 2015</span>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="object-cover w-full">
-                  <button class="w-full mt-1 px-4 py-2 text-xs font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
-                    Register
-                    </button>
-              </div>
-          </div>
-
-          <!-- Card -->
-          <div class="max-w-med mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
-              <img class="object-cover w-full h-32" src="https://scontent.fmnl30-1.fna.fbcdn.net/v/t1.6435-9/191653768_1837211159776373_1406884219945193703_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=e3f864&_nc_ohc=aDqklNtJJNkAX9M0W_K&tn=cW8Mgcb9emuMtob4&_nc_ht=scontent.fmnl30-1.fna&oh=f054b7aa152074815710dd7fe2d0d868&oe=6170A75D" alt="Article">
-
-              <div class="px-6 py-4">
-                  <div>
-                      <span class="text-xs font-medium text-blue-600 uppercase dark:text-blue-400">Webinar</span>
-                      <a class="block mt-2 text-l font-semibold text-gray-800 dark:text-white hover:text-gray-600 hover:underline">LEADERSHIP SUMMIT</a>
-                      <p class="mt-2 text-xs text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  </div>
-
-                  <div class="mt-4">
-                     <div class="flex items-center space-x-3">
-                          <div class="flex items-center space-x-3">
-                              <img class="object-cover h-8 rounded-full" src="https://scontent.fmnl30-2.fna.fbcdn.net/v/t39.30808-6/233120337_1895602473937241_2422289550683056379_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=wDaHSEDh7VAAX_F-ocN&_nc_ht=scontent.fmnl30-2.fna&oh=138f294836d44ebf81d5b945c4bf461a&oe=614FC328" alt="Avatar">
-                              <a class="mx-2 text-xs font-semibold text-gray-700 dark:text-gray-200">Mapua SOIT SC</a>
-                          </div>
-                          <span class="mx-1 text-xs text-gray-600 dark:text-gray-300">21 SEP 2015</span>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="object-cover w-full">
-                  <button class="w-full mt-1 px-4 py-2 text-xs font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
-                  Register
-                    </button>
-              </div>
-          </div>
-
-          <!-- Card -->
-          <div class="max-w-med mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
-              <img class="object-cover w-full h-32" src="https://scontent.fmnl30-1.fna.fbcdn.net/v/t1.6435-9/191653768_1837211159776373_1406884219945193703_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=e3f864&_nc_ohc=aDqklNtJJNkAX9M0W_K&tn=cW8Mgcb9emuMtob4&_nc_ht=scontent.fmnl30-1.fna&oh=f054b7aa152074815710dd7fe2d0d868&oe=6170A75D" alt="Article">
-
-              <div class="px-6 py-4">
-                  <div>
-                      <span class="text-xs font-medium text-blue-600 uppercase dark:text-blue-400">Webinar</span>
-                      <a class="block mt-2 text-l font-semibold text-gray-800 dark:text-white hover:text-gray-600 hover:underline">LEADERSHIP SUMMIT</a>
-                      <p class="mt-2 text-xs text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  </div>
-
-                  <div class="mt-4">
-                     <div class="flex items-center space-x-3">
-                          <div class="flex items-center space-x-3">
-                              <img class="object-cover h-8 rounded-full" src="https://scontent.fmnl30-2.fna.fbcdn.net/v/t39.30808-6/233120337_1895602473937241_2422289550683056379_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=wDaHSEDh7VAAX_F-ocN&_nc_ht=scontent.fmnl30-2.fna&oh=138f294836d44ebf81d5b945c4bf461a&oe=614FC328" alt="Avatar">
-                              <a class="mx-2 text-xs font-semibold text-gray-700 dark:text-gray-200">Mapua SOIT SC</a>
-                          </div>
-                          <span class="mx-1 text-xs text-gray-600 dark:text-gray-300">21 SEP 2015</span>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="object-cover w-full">
-                  <button class="w-full mt-1 px-4 py-2 text-xs font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
-                  Register
-                    </button>
-              </div>
-          </div>
-
-          <!-- Card -->
-          <div class="max-w-med mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
-              <img class="object-cover w-full h-32" src="https://scontent.fmnl30-1.fna.fbcdn.net/v/t1.6435-9/191653768_1837211159776373_1406884219945193703_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=e3f864&_nc_ohc=aDqklNtJJNkAX9M0W_K&tn=cW8Mgcb9emuMtob4&_nc_ht=scontent.fmnl30-1.fna&oh=f054b7aa152074815710dd7fe2d0d868&oe=6170A75D" alt="Article">
-
-              <div class="px-6 py-4">
-                  <div>
-                      <span class="text-xs font-medium text-blue-600 uppercase dark:text-blue-400">Webinar</span>
-                      <a class="block mt-2 text-l font-semibold text-gray-800 dark:text-white hover:text-gray-600 hover:underline">LEADERSHIP SUMMIT</a>
-                      <p class="mt-2 text-xs text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  </div>
-
-                  <div class="mt-4">
-                     <div class="flex items-center space-x-3">
-                          <div class="flex items-center space-x-3">
-                              <img class="object-cover h-8 rounded-full" src="https://scontent.fmnl30-2.fna.fbcdn.net/v/t39.30808-6/233120337_1895602473937241_2422289550683056379_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=wDaHSEDh7VAAX_F-ocN&_nc_ht=scontent.fmnl30-2.fna&oh=138f294836d44ebf81d5b945c4bf461a&oe=614FC328" alt="Avatar">
-                              <a class="mx-2 text-xs font-semibold text-gray-700 dark:text-gray-200">Mapua SOIT SC</a>
-                          </div>
-                          <span class="mx-1 text-xs text-gray-600 dark:text-gray-300">21 SEP 2015</span>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="object-cover w-full">
-                  <button class="w-full mt-1 px-4 py-2 text-xs font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
-                  Register
-                    </button>
-              </div>
-          </div>
-
         </main>
       </div>
     </div>
