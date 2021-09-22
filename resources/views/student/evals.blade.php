@@ -570,6 +570,133 @@
                 The event was meaningful and relevant to my student life.
                 </span>
                 <select class="col-md-6 w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
+                  <option></option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </label>
+
+              <label class="form-row mt-4 text-sm">
+                <span class="col-md-6 my-auto text-gray-700 dark:text-gray-400">
+                The activity was on time, from start to finish.
+                </span>
+                <select class="col-md-6 w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
+                  <option></option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </label>
+
+              <label class="form-row mt-4 text-sm">
+                <span class="col-md-6 my-auto text-gray-700 dark:text-gray-400">
+                The speaker/s were effective in delivering their topic.
+                </span>
+                <select class="col-md-6 w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
+                  <option></option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </label>
+
+              <label class="form-row mt-4 text-sm">
+                <span class="col-md-6 my-auto text-gray-700 dark:text-gray-400">
+                The speaker/s showed mastery of the subject matter.
+                </span>
+                <select class="col-md-6 w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
+                  <option></option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </label>
+
+              <label class="form-row mt-4 text-sm">
+                <span class="col-md-6 my-auto text-gray-700 dark:text-gray-400">
+                The speaker/s was/were attentive to the participants.
+                </span>
+                <select class="col-md-6 w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
+                  <option></option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </label>
+
+              <label class="form-row mt-4 text-sm">
+                <span class="col-md-6 my-auto text-gray-700 dark:text-gray-400">
+                The speaker/s practiced fairness and impartiality to students or the subject matter.
+                </span>
+                <select class="col-md-6 w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
+                  <option></option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </label>
+
+              <label class="form-row mt-4 text-sm">
+                <span class="col-md-6 my-auto text-gray-700 dark:text-gray-400">
+                The speaker/s showed excellent communication skills.
+                </span>
+                <select class="col-md-6 w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
+                  <option></option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </label>
+
+              <label class="form-row mt-4 text-sm">
+                <span class="col-md-6 my-auto text-gray-700 dark:text-gray-400">
+                The objective of the activity was met.
+                </span>
+                <select class="col-md-6 w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
+                  <option></option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </label>
+
+              <label class="form-row mt-4 text-sm">
+                <span class="col-md-6 my-auto text-gray-700 dark:text-gray-400">
+                Overall, the activity was satisfying.
+                </span>
+                <select class="col-md-6 w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
+                  <option></option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </label>
+
+              <label class="form-row mt-4 text-sm">
+                <span class="col-md-6 my-auto text-gray-700 dark:text-gray-400">
+                The activity had utmost impact and relevance.
+                </span>
+                <select class="col-md-6 w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
+                  <option></option>
                   <option>1</option>
                   <option>2</option>
                   <option>3</option>
@@ -579,7 +706,25 @@
               </label>
 
               <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Comments/Suggestions</span>
+                <span class="text-gray-700 dark:text-gray-400">What are the strong points of the activity?</span>
+                <textarea
+                  class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                  rows="3"
+                  placeholder="Enter some long form content."
+                ></textarea>
+              </label>
+              
+              <label class="block mt-4 text-sm">
+                <span class="text-gray-700 dark:text-gray-400">What are your takeaways from the activity?</span>
+                <textarea
+                  class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                  rows="3"
+                  placeholder="Enter some long form content."
+                ></textarea>
+              </label>
+
+              <label class="block mt-4 text-sm">
+                <span class="text-gray-700 dark:text-gray-400">In what ways can we improve? Comments/Suggestions</span>
                 <textarea
                   class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
                   rows="3"
@@ -599,7 +744,12 @@
                   </span>
                 </label>
               </div>
+              <button class="submit-button mt-4 px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                  Submit
+              </button>
             </div>
+
+            
                
             </h2>
           </div>
