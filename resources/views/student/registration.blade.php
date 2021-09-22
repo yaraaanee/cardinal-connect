@@ -532,7 +532,7 @@
 
               <div class="px-6 py-4">
                   <div>
-                  <span class="text-xs font-medium text-blue-600 uppercase dark:text-blue-400">Event</span>
+                      <span class="text-xs font-medium text-blue-600 uppercase dark:text-white">Webinar</span>
                       <a href="#" class="block mt-2 text-l font-semibold text-gray-800 dark:text-white hover:text-gray-600 hover:underline">LEADERSHIP SUMMIT</a>
                       <p class="mt-2 text-xs text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                   </div>
@@ -561,7 +561,7 @@
 
               <div class="px-6 py-4">
                   <div>
-                      <span class="text-xs font-medium text-blue-600 uppercase dark:text-white-400">Webinar</span>
+                      <span class="text-xs font-medium text-blue-600 uppercase dark:text-white">Webinar</span>
                       <a class="block mt-2 text-l font-semibold text-gray-800 dark:text-white hover:text-gray-600 hover:underline">Creative Leaders</a>
                       <p class="mt-2 text-xs text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                   </div>
@@ -590,7 +590,7 @@
 
               <div class="px-6 py-4">
                   <div>
-                      <span class="text-xs font-medium text-blue-600 uppercase dark:text-blue-400">Webinar</span>
+                      <span class="text-xs font-medium text-blue-600 uppercase dark:text-white">Webinar</span>
                       <a class="block mt-2 text-l font-semibold text-gray-800 dark:text-white hover:text-gray-600 hover:underline">LEADERSHIP SUMMIT</a>
                       <p class="mt-2 text-xs text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                   </div>
@@ -619,7 +619,7 @@
 
               <div class="px-6 py-4">
                   <div>
-                      <span class="text-xs font-medium text-blue-600 uppercase dark:text-blue-400">Webinar</span>
+                      <span class="text-xs font-medium text-blue-600 uppercase dark:text-white">Webinar</span>
                       <a class="block mt-2 text-l font-semibold text-gray-800 dark:text-white hover:text-gray-600 hover:underline">LEADERSHIP SUMMIT</a>
                       <p class="mt-2 text-xs text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                   </div>
@@ -648,7 +648,7 @@
 
               <div class="px-6 py-4">
                   <div>
-                      <span class="text-xs font-medium text-blue-600 uppercase dark:text-blue-400">Webinar</span>
+                      <span class="text-xs font-medium text-blue-600 uppercase dark:text-white">Webinar</span>
                       <a class="block mt-2 text-l font-semibold text-gray-800 dark:text-white hover:text-gray-600 hover:underline">LEADERSHIP SUMMIT</a>
                       <p class="mt-2 text-xs text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                   </div>
