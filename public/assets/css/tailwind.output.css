@@ -955,9 +955,9 @@
         max-width: 28rem;
     }
 
-/* Logout Button */
-.logout-bottom {
-    position: absolute;
-    bottom: 0;
-    /* width: 50%; */
-}
+    /* Logout Button */
+    .logout-bottom {
+        position: absolute;
+        bottom: 0;
+        /* width: 50%; */
+    }
