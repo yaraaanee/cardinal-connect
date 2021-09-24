@@ -45,9 +45,7 @@ Route::get('/student/home', function () {
     return view('student.home');
 });
 
-Route::get('/student/profile', function () {
-    return view('student.profile');
-});
+
 
 Route::get('/student/register', function () {
     return view('student.registration');
@@ -57,12 +55,20 @@ Route::get('/student/evals', function () {
     return view('student.evals');
 });
 
+Route::get('/admin', function () {
+    return view('admin.admin');
+});
+
 Route::get('/cardinalconnect/login', function () {
     return view('layouts.login');
 });
 
 Route::get('/login', function () {
     return view('login');
+});
+
+Route::get('/profile', function () {
+    return view('profile');
 });
 
 

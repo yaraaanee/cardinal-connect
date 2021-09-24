@@ -56,10 +56,7 @@
         
             <!-- Manage -->
             <li class="relative px-6 py-3">
-            <span class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg" aria-hidden="true"
-              ></span>
-              <button
-                class="inline-flex items-center w-full justify-between text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
+              <button class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                 @click="togglePagesMenu"
                 aria-haspopup="true"
               >
@@ -106,7 +103,7 @@
                 >
                 <!-- Dropdown Pages -->
                 <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                    <a class="w-full" href="/student/events">Registration</a>
+                    <a class="w-full" href="/student/register">Registration</a>
                   </li>
                   <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
                     <a class="w-full" href="/student/evals"> Student Evaluation </a>
@@ -115,14 +112,16 @@
               </template>
             </li>
           </ul>
-          <!-- <div class="px-6 my-6">
+          <div class="logout-bottom w-64 px-6 my-6">
             <button
               class="flex items-center justify-between w-full px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
             >
-              Create account
-              <span class="ml-2" aria-hidden="true">+</span>
+              Logout
+              <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+              </svg>
             </button>
-          </div> -->
+          </div>
         </div>
       </aside>
       <!-- Mobile sidebar -->
@@ -159,14 +158,8 @@
           <ul class="mt-6">
             <!-- (Mobile) Dashboard Tab -->
             <li class="relative px-6 py-3">
-              <span
-                class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
-                aria-hidden="true"
-              ></span>
-              <a
-                class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
-                href="index.html"
-              >
+              <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                href="/student/home">
                 <svg
                   class="w-5 h-5"
                   aria-hidden="true"
@@ -205,10 +198,10 @@
                     stroke="currentColor"
                   >
                     <path
-                      d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
                     ></path>
                   </svg>
-                  <span class="ml-4">Pages</span>
+                  <span class="ml-4">Events</span>
                 </span>
                 <svg
                   class="w-4 h-4"
@@ -237,25 +230,25 @@
                   <li
                     class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                   >
-                    <a class="w-full" href="/student/events">Registration</a>
+                    <a class="w-full" href="/student/register">Registration</a>
                   </li>
                   <li
                     class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                   >
-                    <a class="w-full" href="/student/evals">
-                      Student Evaluation
-                    </a>
+                    <a class="w-full" href="/student/evals"> Student Evaluation</a>
                   </li>
                 </ul>
               </template>
             </li>
           </ul>
-          <div class="px-6 my-6">
+          <div class="logout-bottom w-64 px-6 my-6">
             <button
-              class="flex items-center justify-between px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
+              class="flex items-center justify-between w-full px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
             >
-              Create account
-              <span class="ml-2" aria-hidden="true">+</span>
+              Logout
+              <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+              </svg>
             </button>
           </div>
         </div>
@@ -445,10 +438,8 @@
                     aria-label="submenu"
                   >
                     <li class="flex">
-                      <a
-                        class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
-                        href="#"
-                      >
+                      <a class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
+                        href="/profile">
                         <svg
                           class="w-4 h-4 mr-3"
                           aria-hidden="true"
@@ -466,7 +457,7 @@
                         <span>Profile</span>
                       </a>
                     </li>
-                    <li class="flex">
+                    <!-- <li class="flex">
                       <a
                         class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
                         href="#"
@@ -488,12 +479,10 @@
                         </svg>
                         <span>Settings</span>
                       </a>
-                    </li>
-                    <li class="flex">
-                      <a
-                        class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
-                        href="#"
-                      >
+                    </li> -->
+                    <!-- <li class="flex">
+                      <a class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
+                        href="#">
                         <svg
                           class="w-4 h-4 mr-3"
                           aria-hidden="true"
@@ -510,7 +499,7 @@
                         </svg>
                         <span>Log out</span>
                       </a>
-                    </li>
+                    </li> -->
                   </ul>
                 </template>
               </li>
@@ -518,77 +507,48 @@
           </div>
         </header>
         <main class="h-full pb-16 overflow-y-auto">
-          <!-- Remove everything INSIDE this div to a really blank page -->
-          <div class="container px-6 mx-auto grid">
-              <!-- General elements -->
-            <h4 class="mb-4 mt-4 text-lg font-semibold text-gray-600 dark:text-gray-300"
-            >
-              Student Activity Evaluation Form
-            </h4>
+         <div class="container max-w-2xl px-6 mx-auto grid">
+            <h2 class="my-6 text-2xl text-center font-semibold text-gray-700 dark:text-gray-200">
+              Profile </h2>
             
-            <h4
-              class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300"
-            >
-              Elements
-            </h4>
-            <div
-              class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800"
-            >
-              <label class="block text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Name</span>
-                <input
-                  class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                  placeholder="Juan Dela Cruz" disabled/>
-              </label>
-
-              <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Email</span>
-                <input
-                  class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                  placeholder="jddelacruz@mymail.mapua.edu.ph" disabled/> <!-- pre-filled since naka log in yung student -->
-              </label>
-
-              <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">
-                  Organization
-                </span>
-                <select
-                  class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
-                >
-                  <option>SOIT SC</option>
-                  <option>Illuminata Mapua</option>
-                  <option>WebMasters Guild</option>
-                  <option>Information Systems Next Gen</option>
-                  <option>Mapua Makati Music Association</option>
-                  <option>Mapua Dance Community</option>
-                  <option>Network Society</option>
-                  <option>Association for Computing Machinery</option>
-                  <option>Chief Entrepreneurs Organization</option>
-                </select>
-              </label>
-
-              <div class="flex mt-6 text-sm">
-                <label class="flex items-center dark:text-gray-400">
-                  <input
-                    type="checkbox"
-                    class="text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
-                  />
-                  <span class="ml-2">
-                    I agree to the
-                    <span class="underline">privacy policy</span>
-                  </span>
-                </label>
-                </div>
-                <button class="submit-button mt-2 px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
-                  Submit
-                </button>
-                </div>
+            <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
+              <div class="photo-wrapper p-2">
+                <img class="w-32 h-32 rounded-full mx-auto" src="https://scontent.fmnl17-1.fna.fbcdn.net/v/t1.6435-9/122526293_3805703339439813_6180503459436934_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=174925&_nc_ohc=YBIGPoLYAaEAX-ku4Sh&_nc_ht=scontent.fmnl17-1.fna&oh=6285d1285a4d456007b9f321dbd6a323&oe=61740B24" alt="Student">
               </div>
+            <div class="p-2">
+            <h3 class="text-center text-xl text-gray-900 font-medium leading-8">Student Name</h3>
+            <div class="text-center text-gray-400 text-xs font-semibold">
+                <p>Position/Title</p>
+            </div>
+            <table class="text-sm mx-auto">
+                <tbody><tr>
+                    <td class="px-2 py-2 text-gray-500 font-semibold">Email</td>
+                    <td class="px-2 py-2">@mymail.mapua.edu.ph</td>
+                </tr>
+                <tr>
+                    <td class="px-2 py-2 text-gray-500 font-semibold">Student Number</td>
+                    <td class="px-2 py-2">2018120111</td>
+                </tr>
+            </tbody></table>  
 
-            </h2>
+            <!--
+              <label class="block text-sm">
+                <span class="text-gray-700 dark:text-gray-400">Full Name</span>
+              </label>
+
+              <label class="block mt-4 text-sm">
+                <span class="text-gray-700 dark:text-gray-400">Email Address</span>
+              </label> -->
+
+              
+
+            </div>
           </div>
+
+          
         </main>
       </div>
     </div>
   </body>
 </html>
+
