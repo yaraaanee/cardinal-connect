@@ -239,14 +239,12 @@
                   <li
                     class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                   >
-                    <a class="w-full" href="/student/events">Registration</a>
+                    <a class="w-full" href="/student/register">Registration</a>
                   </li>
                   <li
                     class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                   >
-                    <a class="w-full" href="/student/evals">
-                      Student Evaluation
-                    </a>
+                    <a class="w-full" href="/student/evals"> Student Evaluation</a>
                   </li>
                 </ul>
               </template>
@@ -449,10 +447,8 @@
                     aria-label="submenu"
                   >
                     <li class="flex">
-                      <a
-                        class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
-                        href="#"
-                      >
+                      <a class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
+                        href="/student/profile">
                         <svg
                           class="w-4 h-4 mr-3"
                           aria-hidden="true"
@@ -470,7 +466,7 @@
                         <span>Profile</span>
                       </a>
                     </li>
-                    <li class="flex">
+                    <!-- <li class="flex">
                       <a
                         class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
                         href="#"
@@ -492,12 +488,10 @@
                         </svg>
                         <span>Settings</span>
                       </a>
-                    </li>
-                    <li class="flex">
-                      <a
-                        class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
-                        href="#"
-                      >
+                    </li> -->
+                    <!-- <li class="flex">
+                      <a class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
+                        href="#">
                         <svg
                           class="w-4 h-4 mr-3"
                           aria-hidden="true"
@@ -514,7 +508,7 @@
                         </svg>
                         <span>Log out</span>
                       </a>
-                    </li>
+                    </li> -->
                   </ul>
                 </template>
               </li>

@@ -33,8 +33,8 @@ Route::get('/org/home', function () {
     return view('org.home');
 });
 
-Route::get('/org/logs', function () {
-    return view('org.logs');
+Route::get('/org/apps', function () {
+    return view('org.applications');
 });
 
 Route::get('/org/manage', function () {
@@ -43,6 +43,10 @@ Route::get('/org/manage', function () {
 
 Route::get('/student/home', function () {
     return view('student.home');
+});
+
+Route::get('/student/profile', function () {
+    return view('student.profile');
 });
 
 Route::get('/student/register', function () {

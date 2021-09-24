@@ -244,6 +244,7 @@
               </template>
             </li>
           </ul>
+        <!-- Logout -->
           <div class="logout-bottom w-64 px-6 my-6">
             <button
               class="flex items-center justify-between w-full px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
@@ -256,11 +257,10 @@
           </div>
         </div>
       </aside>
+
       <div class="flex flex-col flex-1 w-full">
         <header class="z-10 py-4 bg-white shadow-md dark:bg-gray-800">
-          <div
-            class="container flex items-center justify-between h-full px-6 mx-auto text-purple-600 dark:text-purple-300"
-          >
+          <div class="container flex items-center justify-between h-full px-6 mx-auto text-purple-600 dark:text-purple-300">
             <!-- Mobile hamburger -->
             <button
               class="p-1 mr-5 -ml-1 rounded-md md:hidden focus:outline-none focus:shadow-outline-purple"
@@ -462,6 +462,7 @@
                         <span>Profile</span>
                       </a>
                     </li>
+                    <!--
                     <li class="flex">
                       <a
                         class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
@@ -484,7 +485,8 @@
                         </svg>
                         <span>Settings</span>
                       </a>
-                    </li>
+                    </li> -->
+                    <!--
                     <li class="flex">
                       <a
                         class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
@@ -506,70 +508,40 @@
                         </svg>
                         <span>Log out</span>
                       </a>
-                    </li>
+                    </li> -->
                   </ul>
                 </template>
-              </li>
+              </li> 
             </ul>
           </div>
         </header>
         <main class="h-full pb-16 overflow-y-auto">
           <!-- Remove everything INSIDE this div to a really blank page -->
           <div class="container px-6 mx-auto grid">
-            <h2
-              class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200"
-            >
-              Home
-              
-              <!--PIXELS-->
-                <div class="max-w-4xl mx-auto bg-white overflow-hidden shadow-md rounded-lg mb-12 grid grid-cols-2 gap-4">
-                    <img src="https://scontent.fcrk4-1.fna.fbcdn.net/v/t39.30808-6/219642382_1877375979093224_4501403283115120862_n.png?_nc_cat=111&ccb=1-3&_nc_sid=730e14&_nc_ohc=PxZ-tx54lkgAX9FzIBp&_nc_ht=scontent.fcrk4-1.fna&oh=e87a45397dcb9de1763fcf9a8b422b99&oe=61061241" 
-                    alt="" class="w-full h-64 object-cover ">
+            <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
+              Home </h2>
+          
+              <div class="max-w-xl mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+                <img class="object-cover w-auto h-auto" src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.6435-9/237084819_4443343015686837_1045095332803328438_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=1VslA4js9d8AX8eNCXb&_nc_ht=scontent.fmnl17-3.fna&oh=8c4928d7767dca216bed89fdebaff0f5&oe=6155D1A7" alt="Article">
 
-                    <div class="p-6 ">
-                        <div>
-                            <span class="text-blue-600 text-xs font-medium uppercase">SOIT STUDENT COUNCIL</span>
-                            <a href="#" class="block text-gray-800 font-semibold text-2xl mt-2 hover:text-gray-600 hover:underline">PIXELS: An Impact One Bit At A Time</a>
-                            <p class="text-sm text-gray-600 mt-2 text-justify">Catch us live on July 16, Friday, at 10:30 AM, as we recognize the officers of our local organizations with special remarks from Dean Ariel Kelly Balan and the president of the SOIT SC, Jerome Ramos!</p>
-                        </div>
-                    </div>
-                </div>
-                <br>
-
-                <!--IT Girl-->
-
-                <div class="max-w-4xl mx-auto bg-white overflow-hidden shadow-md rounded-lg mb-12 grid grid-cols-2 gap-4">
-                    <img src="https://scontent.fcrk4-1.fna.fbcdn.net/v/t1.6435-9/164878522_4122214184491596_7920384675582262737_n.png?_nc_cat=106&ccb=1-3&_nc_sid=9267fe&_nc_ohc=PS9-c30mYsEAX9hQDTV&_nc_ht=scontent.fcrk4-1.fna&oh=755259a7f41bf288f0c22df59c8d7721&oe=61252017" 
-                    alt="" class="w-full h-64 object-cover">
-
-                    <div class="p-6">
-                        <div>
-                            <span class="text-blue-600 text-xs font-medium uppercase">Web Masters' Guild</span>
-                            <a href="#" class="block text-gray-800 font-semibold text-2xl mt-2 hover:text-gray-600 hover:underline">I.T. Girl</a>
-                            <p class="text-sm text-gray-600 mt-2 text-justify">Join Webmaster's Guild, together with our empowered women speakers from the fields of Information Technology</p>
-                        </div>
-                    </div>
-                </div>
-                <br>
-
-                <!--LEADERSHIP SUMMIT-->
-                <div class="max-w-4xl mx-auto bg-white overflow-hidden shadow-md rounded-lg mb-12 grid grid-cols-2 gap-4">
-                  <img src="https://scontent.fcrk4-1.fna.fbcdn.net/v/t1.6435-9/191653768_1837211159776373_1406884219945193703_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=e3f864&_nc_ohc=yD8Ee8U3tG0AX9flsAV&_nc_ht=scontent.fcrk4-1.fna&oh=c3a85be23ec133b4368bc571926caa83&oe=612581DD" 
-                    alt="" class="w-full h-64 object-cover">
-
-                <div class="p-6">
+                <div class="px-6 py-4">
                     <div>
-                        <span class="text-blue-600 text-xs font-medium uppercase">SOIT STUDENT COUNCIL</span> <br>
-                        <a href="#" class="block text-gray-800 font-semibold text-2xl mt-2 hover:text-gray-600 hover:underline">Leadership Summit 2021</a>
-                        <p class="text-sm text-gray-600 mt-2 text-justify">Learn from the most competent leaders as they share their knowledge and inspire us to serve with a purpose. Make a breakthrough and reimagine the way you perceive leadership.</p>
+                        <span class="text-xs font-medium text-blue-600 uppercase dark:text-white">Event</span>
+                        <a class="block mt-2 text-xl font-semibold text-gray-800 dark:text-white hover:text-gray-600 hover:underline">CREATE: Multimedia Toolbox</a>
+                        <p class="mt-2 text-xs text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie parturient et sem ipsum volutpat vel. Natoque sem et aliquam mauris egestas quam volutpat viverra. In pretium nec senectus erat. Et malesuada lobortis.</p>
                     </div>
-                </div>
-                <div class="max-w-2xl mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
-            </div>
-            </h2>
-          </div>
-        </main>
-        
+                    
+                    <div class="mt-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="flex items-center space-x-3">
+                                <img class="object-cover h-8 rounded-full" src="https://images.unsplash.com/photo-1586287011575-a23134f797f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=48&q=60" alt="Avatar">
+                                <a class="mx-2 text-xs font-semibold text-gray-700 dark:text-gray-200">Illuminata Mapua</a>
+                            </div>
+                            <span class="mx-1 text-xs text-gray-600 dark:text-gray-300">03 SEP 2021</span>
+                        </div>
+                    </div>
+                  </div>
+              </div>        
 
       </div>
     </div>

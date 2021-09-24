@@ -952,7 +952,7 @@
     /* Event Cards */
     .
     .max-w-med{
-        max-width: 28rem;
+        width: 25rem;
     }
 
     /* Logout Button */
@@ -960,4 +960,14 @@
         position: absolute;
         bottom: 0;
         /* width: 50%; */
+    }
+
+    /*height*/
+    .ht{
+        height:25rem;
+    }
+
+    /*width*/
+    .wt{
+        width:25rem;
     }

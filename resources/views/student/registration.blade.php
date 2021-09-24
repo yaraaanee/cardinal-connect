@@ -106,7 +106,7 @@
                 >
                 <!-- Dropdown Pages -->
                 <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                    <a class="w-full" href="/student/events">Registration</a>
+                    <a class="w-full" href="/student/register">Registration</a>
                   </li>
                   <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
                     <a class="w-full" href="/student/evals"> Student Evaluation </a>
@@ -467,7 +467,7 @@
                         <span>Profile</span>
                       </a>
                     </li>
-                    <li class="flex">
+                   <!-- <li class="flex">
                       <a
                         class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
                         href="#"
@@ -489,8 +489,8 @@
                         </svg>
                         <span>Settings</span>
                       </a>
-                    </li>
-                    <li class="flex">
+                    </li> -->
+                   <!-- <li class="flex">
                       <a
                         class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
                         href="#"
@@ -511,7 +511,7 @@
                         </svg>
                         <span>Log out</span>
                       </a>
-                    </li>
+                    </li> -->
                   </ul>
                 </template>
               </li>
@@ -533,7 +533,7 @@
               <div class="px-6 py-4">
                   <div>
                       <span class="text-xs font-medium text-blue-600 uppercase dark:text-white">Webinar</span>
-                      <a href="#" class="block mt-2 text-l font-semibold text-gray-800 dark:text-white hover:text-gray-600 hover:underline">LEADERSHIP SUMMIT</a>
+                      <a class="block mt-2 text-l font-semibold text-gray-800 dark:text-white hover:text-gray-600 hover:underline">LEADERSHIP SUMMIT</a>
                       <p class="mt-2 text-xs text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                   </div>
 

@@ -130,7 +130,7 @@
                   aria-label="submenu"
                 >
                   <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                    <a class="w-full" href="/org/logs"> Applications</a>
+                    <a class="w-full" href="/org/apps"> Applications</a>
                   </li>
                   <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
                     <a class="w-full" href="/student/evals"> Student Evaluation </a>
@@ -178,7 +178,7 @@
         <div class="py-4 text-gray-500 dark:text-gray-400">
           <a
             class="ml-6 text-lg font-bold text-gray-800 dark:text-gray-200"
-            href="#"
+            href="/org/home"
           >
             Cardinal Connect
           </a>
@@ -186,7 +186,7 @@
             <li class="relative px-6 py-3">
               <a
                 class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
-                href="index.html"
+                href="/org/home"
               >
                 <svg
                   class="w-5 h-5"
@@ -210,7 +210,7 @@
             <li class="relative px-6 py-3">
               <a
                 class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
-                href="forms.html"
+                href="/org/manage"
               >
                 <svg
                   class="w-5 h-5"
@@ -282,13 +282,13 @@
                   <li
                     class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                   >
-                    <a class="w-full" href="/org/logs"> Logs </a>
+                    <a class="w-full" href="/org/apps"> Applications </a>
                   </li>
                   <li
                     class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                   >
-                    <a class="w-full" href="pages/forgot-password.html">
-                      Application
+                    <a class="w-full" href="/student/evals">
+                      Student Evaluation
                     </a>
                   </li>
                   <li
@@ -518,7 +518,8 @@
                         <span>Profile</span>
                       </a>
                     </li>
-                    <li class="flex">
+
+                   <!-- <li class="flex">
                       <a
                         class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
                         href="#"
@@ -540,12 +541,11 @@
                         </svg>
                         <span>Settings</span>
                       </a>
-                    </li>
-                    <li class="flex">
+                    </li> -->
+                    <!-- <li class="flex">
                       <a
                         class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
-                        href="#"
-                      >
+                        href="#">
                         <svg
                           class="w-4 h-4 mr-3"
                           aria-hidden="true"
@@ -562,7 +562,7 @@
                         </svg>
                         <span>Log out</span>
                       </a>
-                    </li>
+                    </li> -->
                   </ul>
                 </template>
               </li>
@@ -572,18 +572,14 @@
 
         <main class="h-full pb-16 overflow-y-auto">
           <div class="container grid px-6 mx-auto">
-            <h2
-              class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200"
-            >
+            <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
               Tables
             </h2>
             <div class="w-full mb-8 overflow-hidden rounded-lg shadow-xs">
               <div class="w-full overflow-x-auto">
                 <table class="w-full whitespace-no-wrap">
                   <thead>
-                    <tr
-                      class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800"
-                    >
+                    <tr class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
                       <th class="px-4 py-3">Organization</th>
                       <th class="px-4 py-3">Type</th>
                       <th class="px-4 py-3">Status</th>

@@ -451,7 +451,7 @@
                     <li class="flex">
                       <a
                         class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
-                        href="#"
+                        href="/student/profile"
                       >
                         <svg
                           class="w-4 h-4 mr-3"
@@ -470,7 +470,7 @@
                         <span>Profile</span>
                       </a>
                     </li>
-                    <li class="flex">
+                    <!-- <li class="flex">
                       <a
                         class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
                         href="#"
@@ -492,8 +492,8 @@
                         </svg>
                         <span>Settings</span>
                       </a>
-                    </li>
-                    <li class="flex">
+                    </li> -->
+                    <!-- <li class="flex">
                       <a
                         class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
                         href="#"
@@ -514,7 +514,7 @@
                         </svg>
                         <span>Log out</span>
                       </a>
-                    </li>
+                    </li> -->
                   </ul>
                 </template>
               </li>
@@ -523,33 +523,31 @@
         </header>
         <main class="h-full pb-16 overflow-y-auto">
           <!-- Remove everything INSIDE this div to a really blank page -->
-          <div class="container px-6 mx-auto grid">
+         <div class="container px-6 mx-auto grid">
             <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
-              Dashboard </h2>
+              Home </h2>
+          
+              <div class="max-w-xl mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+                <img class="object-cover w-auto h-auto" src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.6435-9/237084819_4443343015686837_1045095332803328438_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=1VslA4js9d8AX8eNCXb&_nc_ht=scontent.fmnl17-3.fna&oh=8c4928d7767dca216bed89fdebaff0f5&oe=6155D1A7" alt="Article">
 
-                <div class="max-w-2xl mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
-                    <img class="object-cover w-full h-64" src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Article">
-
-                    <div class="p-6">
-                        <div>
-                            <span class="text-xs font-medium text-blue-600 uppercase dark:text-blue-400">SOIT SC</span>
-                            <a href="#" class="block mt-2 text-2xl font-semibold text-gray-800 dark:text-white hover:text-gray-600 hover:underline">Learning Online</a>
-                            <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie parturient et sem ipsum volutpat vel. Natoque sem et aliquam mauris egestas quam volutpat viverra. In pretium nec senectus erat. Et malesuada lobortis.</p>
-                        </div>
-
-                        <div class="mt-4">
-                            <div class="flex items-center">
-                                <div class="flex items-center">
-                                    <img class="object-cover h-10 rounded-full" src="https://images.unsplash.com/photo-1586287011575-a23134f797f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=48&q=60" alt="Avatar">
-                                    <a href="#" class="mx-2 font-semibold text-gray-700 dark:text-gray-200">Jone Doe</a>
-                                </div>
-                                <span class="mx-1 text-xs text-gray-600 dark:text-gray-300">21 SEP 2015</span>
+                <div class="px-6 py-4">
+                    <div>
+                        <span class="text-xs font-medium text-blue-600 uppercase dark:text-white">Event</span>
+                        <a class="block mt-2 text-xl font-semibold text-gray-800 dark:text-white hover:text-gray-600 hover:underline">CREATE: Multimedia Toolbox</a>
+                        <p class="mt-2 text-xs text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie parturient et sem ipsum volutpat vel. Natoque sem et aliquam mauris egestas quam volutpat viverra. In pretium nec senectus erat. Et malesuada lobortis.</p>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="flex items-center space-x-3">
+                                <img class="object-cover h-8 rounded-full" src="https://images.unsplash.com/photo-1586287011575-a23134f797f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=48&q=60" alt="Avatar">
+                                <a class="mx-2 text-xs font-semibold text-gray-700 dark:text-gray-200">Illuminata Mapua</a>
                             </div>
+                            <span class="mx-1 text-xs text-gray-600 dark:text-gray-300">03 SEP 2021</span>
                         </div>
                     </div>
-                </div>
+                  </div>
               </div>
-            </h2>
           </div>
         </main>
       </div>

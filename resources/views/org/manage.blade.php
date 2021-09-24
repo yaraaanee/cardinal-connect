@@ -128,10 +128,10 @@
                   aria-label="submenu"
                 >
                   <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                    <a class="w-full" href="/org/logs"> Applications </a>
+                    <a class="w-full" href="/org/apps"> Applications </a>
                   </li>
                   <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                    <a class="w-full" href="/org/applications"> Student Evaluation </a>
+                    <a class="w-full" href="/org/evals"> Student Evaluation </a>
                   </li>
                 </ul>
               </template>
@@ -281,11 +281,11 @@
                   <li
                     class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                   >
-                    <a class="w-full" href="/org/logs"> Logs </a>
+                    <a class="w-full" href="/org/apps"> Applications </a>
                   </li>
                   <li
                     class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                    <a class="w-full" href="pages/forgot-password.html"> Application </a>
+                    <a class="w-full" href="/org/studevals"> Student Evaluation </a>
                   </li>
                 </ul>
               </template>
@@ -509,7 +509,8 @@
                         <span>Profile</span>
                       </a>
                     </li>
-                    <li class="flex">
+
+                    <!-- <li class="flex">
                       <a
                         class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
                         href="#"
@@ -531,8 +532,8 @@
                         </svg>
                         <span>Settings</span>
                       </a>
-                    </li>
-                    <li class="flex">
+                    </li> -->
+                   <!-- <li class="flex">
                       <a
                         class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
                         href="#"
@@ -553,7 +554,7 @@
                         </svg>
                         <span>Log out</span>
                       </a>
-                    </li>
+                    </li> -->
                   </ul>
                 </template>
               </li>

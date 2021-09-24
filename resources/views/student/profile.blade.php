@@ -3,11 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | Cardinal Connect <!--@yield('title')--></title>
+    <title>Home | Cardinal Connect</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
     <link rel="stylesheet" href="../assets/css/tailwind.output.css" />
     <script
       src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
@@ -26,18 +25,19 @@
         class="z-20 hidden w-64 overflow-y-auto bg-white dark:bg-gray-800 md:block flex-shrink-0"
       >
         <div class="py-4 text-gray-500 dark:text-gray-400">
-          <a class="ml-6 text-lg font-bold text-gray-800 dark:text-gray-200"
-            href="/org/home">
+          <a
+            class="ml-6 text-lg font-bold text-gray-800 dark:text-gray-200"
+            href="/student/home">
             Cardinal Connect
           </a>
           <ul class="mt-6">
+            <!-- Dashboard -->
             <li class="relative px-6 py-3">
-              <span
-                class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
-                aria-hidden="true"
+              <span class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg" aria-hidden="true"
               ></span>
-              <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
-                href="/org/home">
+              <a
+                class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
+                href="/student/home">
                 <svg
                   class="w-5 h-5"
                   aria-hidden="true"
@@ -55,30 +55,8 @@
                 <span class="ml-4">Dashboard</span>
               </a>
             </li>
-            
-            <!-- Manage-->
-            <li class="relative px-6 py-3">
-              <a
-                class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
-                href="/org/manage"
-              >
-                <svg
-                  class="w-5 h-5"
-                  aria-hidden="true"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
-                </svg>
-                <span class="ml-4">Manage</span>
-              </a>
-            </li>
         
-            <!-- Documents -->
+            <!-- Manage -->
             <li class="relative px-6 py-3">
               <button
                 class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
@@ -97,10 +75,10 @@
                     stroke="currentColor"
                   >
                     <path
-                      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
                     ></path>
                   </svg>
-                  <span class="ml-4">Documents</span>
+                  <span class="ml-4">Events</span>
                 </span>
                 <svg
                   class="w-4 h-4"
@@ -126,13 +104,14 @@
                   class="p-2 mt-2 space-y-2 overflow-hidden text-sm font-medium text-gray-500 rounded-md shadow-inner bg-gray-50 dark:text-gray-400 dark:bg-gray-900"
                   aria-label="submenu"
                 >
-                  <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                    <a class="w-full" href="/org/apps"> Applications </a>
+                <!-- Dropdown Pages -->
+                <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
+                    <a class="w-full" href="/student/register">Registration</a>
                   </li>
                   <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
                     <a class="w-full" href="/student/evals"> Student Evaluation </a>
                   </li>
-                </ul>
+                </ul>               
               </template>
             </li>
           </ul>
@@ -140,7 +119,7 @@
             <button
               class="flex items-center justify-between w-full px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
             >
-              Logout
+            Logout
               <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
               </svg>
@@ -175,11 +154,12 @@
         <div class="py-4 text-gray-500 dark:text-gray-400">
           <a
             class="ml-6 text-lg font-bold text-gray-800 dark:text-gray-200"
-            href="/org/home"
+            href="#"
           >
             Cardinal Connect
           </a>
           <ul class="mt-6">
+            <!-- (Mobile) Dashboard Tab -->
             <li class="relative px-6 py-3">
               <span
                 class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
@@ -187,7 +167,7 @@
               ></span>
               <a
                 class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
-                href="/org/home"
+                href="index.html"
               >
                 <svg
                   class="w-5 h-5"
@@ -208,28 +188,7 @@
             </li>
           </ul>
           <ul>
-            <li class="relative px-6 py-3">
-              <a
-                class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
-                href="/org/manage"
-              >
-                <svg
-                  class="w-5 h-5"
-                  aria-hidden="true"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
-                  ></path>
-                </svg>
-                <span class="ml-4">Manage</span>
-              </a>
-            </li>
+            <!-- (Mobile) Events Tab -->
             <li class="relative px-6 py-3">
               <button
                 class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
@@ -248,10 +207,10 @@
                     stroke="currentColor"
                   >
                     <path
-                      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                      d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"
                     ></path>
                   </svg>
-                  <span class="ml-4">Documents</span>
+                  <span class="ml-4">Pages</span>
                 </span>
                 <svg
                   class="w-4 h-4"
@@ -280,13 +239,13 @@
                   <li
                     class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                   >
-                    <a class="w-full" href="/org/logs"> Logs </a>
+                    <a class="w-full" href="pages/login.html"></a>
                   </li>
                   <li
                     class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                   >
-                    <a class="w-full" href="#">
-                      Application
+                    <a class="w-full" href="pages/create-account.html">
+                      Student Evaluation
                     </a>
                   </li>
                 </ul>
@@ -511,7 +470,6 @@
                         <span>Profile</span>
                       </a>
                     </li>
-                    
                     <!-- <li class="flex">
                       <a
                         class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
@@ -535,7 +493,7 @@
                         <span>Settings</span>
                       </a>
                     </li> -->
-                   <!-- <li class="flex">
+                    <!-- <li class="flex">
                       <a
                         class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
                         href="#"
@@ -563,36 +521,14 @@
             </ul>
           </div>
         </header>
-
         <main class="h-full pb-16 overflow-y-auto">
-         <!-- Remove everything INSIDE this div to a really blank page -->
+          <!-- Remove everything INSIDE this div to a really blank page -->
          <div class="container px-6 mx-auto grid">
             <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
-              Home </h2>
+              Profile </h2>
           
-              <div class="max-w-xl mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
-                <img class="object-cover w-auto h-auto" src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.6435-9/237084819_4443343015686837_1045095332803328438_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=1VslA4js9d8AX8eNCXb&_nc_ht=scontent.fmnl17-3.fna&oh=8c4928d7767dca216bed89fdebaff0f5&oe=6155D1A7" alt="Article">
-
-                <div class="px-6 py-4">
-                    <div>
-                        <span class="text-xs font-medium text-blue-600 uppercase dark:text-white">Event</span>
-                        <a class="block mt-2 text-xl font-semibold text-gray-800 dark:text-white hover:text-gray-600 hover:underline">CREATE: Multimedia Toolbox</a>
-                        <p class="mt-2 text-xs text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie parturient et sem ipsum volutpat vel. Natoque sem et aliquam mauris egestas quam volutpat viverra. In pretium nec senectus erat. Et malesuada lobortis.</p>
-                    </div>
-                    
-                    <div class="mt-4">
-                        <div class="flex items-center space-x-3">
-                            <div class="flex items-center space-x-3">
-                                <img class="object-cover h-8 rounded-full" src="https://images.unsplash.com/photo-1586287011575-a23134f797f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=48&q=60" alt="Avatar">
-                                <a class="mx-2 text-xs font-semibold text-gray-700 dark:text-gray-200">Illuminata Mapua</a>
-                            </div>
-                            <span class="mx-1 text-xs text-gray-600 dark:text-gray-300">03 SEP 2021</span>
-                        </div>
-                    </div>
-                  </div>
-              </div>
+          </div>
         </main>
-
       </div>
     </div>
   </body>
